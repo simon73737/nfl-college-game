@@ -1,0 +1,2305 @@
+Player,College,Team
+Josh Allen,"Reedley,Wyoming",buf
+Alec Anderson,UCLA,buf
+Joe Andreessen,"Bryant,Buffalo",buf
+Eli Ankou,UCLA,buf
+Tyler Bass,Georgia Southern,buf
+Christian Benford,Villanova,buf
+Terrel Bernard,Baylor,buf
+Cole Bishop,Utah,buf
+Spencer Brown,Northern Iowa,buf
+DeWayne Carter,Duke,buf
+Lewis Cine,Georgia,buf
+Will Clapp,LSU,buf
+Kameron Cline,South Dakota,buf
+Brandon Codrington,North Carolina Central,buf
+Keon Coleman,"Michigan St.,Florida St.",buf
+James Cook,Georgia,buf
+Amari Cooper,Alabama,buf
+Zach Davidson,Central Missouri St.,buf
+Ray Davis,"Temple,Vanderbilt,Kentucky",buf
+Dion Dawkins,Temple,buf
+Branson Deen,"Purdue,Miami (FL)",buf
+Rasul Douglas,"Nassau CC,West Virginia",buf
+David Edwards,Wisconsin,buf
+Mike Edwards,"Kentucky,Hawaii",buf
+Kaiir Elam,Florida,buf
+A.J. Epenesa,Iowa,buf
+Reid Ferguson,LSU,buf
+Reggie Gilliam,Toledo,buf
+Richard Gouraige,Florida,buf
+Tylan Grable,"Jacksonville St.,Central Florida",buf
+Damar Hamlin,Pittsburgh,buf
+Mack Hollins,North Carolina,buf
+Ja'Marcus Ingram,"Utah St.,Texas Tech,Buffalo",buf
+Kareem Jackson,Alabama,buf
+Quinton Jefferson,Maryland,buf
+Austin Johnson,Penn St.,buf
+Taron Johnson,Weber St.,buf
+Ty Johnson,Maryland,buf
+Kingsley Jonathan,Syracuse,buf
+DaQuan Jones,Penn St.,buf
+Dalton Kincaid,"San Diego,Utah",buf
+Dawson Knox,Mississippi,buf
+Cameron Lewis,Buffalo,buf
+Zion Logue,Georgia,buf
+Sam Martin,Appalachian St.,buf
+Connor McGovern,Penn St.,buf
+Matt Milano,Boston Col.,buf
+Von Miller,Texas A&M,buf
+Quintin Morris,Bowling Green,buf
+Nicholas Morrow,Greenville,buf
+Ed Oliver,Houston,buf
+Jordan Phillips,Oklahoma,buf
+Taylor Rapp,Washington,buf
+Gregory Rousseau,Miami (FL),buf
+Curtis Samuel,Ohio St.,buf
+Khalil Shakir,Boise St.,buf
+Tyrell Shavers,"Alabama,Mississippi St.,San Diego St.",buf
+Dawuane Smoot,Illinois,buf
+Javon Solomon,Troy,buf
+Baylon Spector,Clemson,buf
+Casey Toohill,Stanford,buf
+O'Cyrus Torrence,"Louisiana,Florida",buf
+Mitchell Trubisky,North Carolina,buf
+Edefuan Ulofoshio,Washington,buf
+Marquez Valdes-Scantling,"North Carolina St.,South Florida",buf
+Ryan Van Demark,Connecticut,buf
+Sedrick Van Pran-Granger,Georgia,buf
+Jalen Virgil,Appalachian St.,buf
+Mike White,"South Florida,Western Kentucky",buf
+Dorian Williams,Tulane,buf
+De'Von Achane,Texas A&M,mia
+Tucker Addington,Sam Houston St.,mia
+Terron Armstead,Ark-Pine Bluff,mia
+Jake Bailey,Stanford,mia
+Odell Beckham Jr.,LSU,mia
+Quinton Bell,Prairie View A&M,mia
+Braxton Berrios,Miami (FL),mia
+Ethan Bonner,Stanford,mia
+Tyus Bowser,Houston,mia
+Tim Boyle,"Connecticut,Eastern Kentucky",mia
+Aaron Brewer,Texas St.,mia
+Jordyn Brooks,Texas Tech,mia
+Calais Campbell,Miami (FL),mia
+Elijah Campbell,"Iowa Western,Northern Illinois,Northern Iowa",mia
+Jackson Carman,Clemson,mia
+Robbie Chosen,Temple,mia
+Tanner Conner,Idaho St.,mia
+Lester Cotton,Alabama,mia
+River Cracraft,Washington St.,mia
+Matt Dickerson,UCLA,mia
+Tyrel Dodson,Texas A&M,mia
+Grant Dubose,"Miles,Charlotte",mia
+Storm Duck,"North Carolina,Louisville",mia
+Liam Eichenberg,Notre Dame,mia
+D'Wayne Eskridge,Western Michigan,mia
+Erik Ezukanma,Texas Tech,mia
+Neil Farrell,LSU,mia
+Blake Ferguson,LSU,mia
+Kendall Fuller,Virginia Tech,mia
+Cameron Goode,California,mia
+Da'Shawn Hand,Alabama,mia
+Ryan Hayes,Michigan,mia
+Julian Hill,Campbell,mia
+Tyreek Hill,"Garden City (KS),Oklahoma St.,West Alabama",mia
+Jevon Holland,Oregon,mia
+Tyler Huntley,Utah,mia
+Alec Ingold,Wisconsin,mia
+Austin Jackson,USC,mia
+Benito Jones,Mississippi,mia
+Robert Jones,"Highland (KS),Middle Tenn. St.",mia
+Mohamed Kamara,Colorado St.,mia
+Kader Kohou,Texas A&M-Commerce,mia
+Kendall Lamm,Appalachian St.,mia
+David Long,West Virginia,mia
+Marcus Maye,Florida,mia
+Patrick McMorris,"San Diego St.,California",mia
+Jake McQuaide,Ohio St.,mia
+Raheem Mostert,Purdue,mia
+Siran Neal,Jacksonville St.,mia
+Nik Needham,Texas-El Paso,mia
+Emmanuel Ogbah,Oklahoma St.,mia
+Matt Overton,Western Washington,mia
+Patrick Paul,Houston,mia
+Jaelan Phillips,"UCLA,Miami (FL)",mia
+Brandon Pili,USC,mia
+Jordan Poyer,Oregon St.,mia
+Jalen Ramsey,Florida St.,mia
+Duke Riley,LSU,mia
+Chop Robinson,"Maryland,Penn St.",mia
+Jason Sanders,New Mexico,mia
+Zach Sieler,Ferris St.,mia
+Cam Smith,South Carolina,mia
+Jonnu Smith,Florida International,mia
+Durham Smythe,Notre Dame,mia
+Jack Stoll,Nebraska,mia
+Tua Tagovailoa,Alabama,mia
+Skylar Thompson,Kansas St.,mia
+Channing Tindall,Georgia,mia
+Zach Triner,Assumption,mia
+Jaylen Waddle,Alabama,mia
+Anthony Walker,Northwestern,mia
+Malik Washington,"Northwestern,Virginia",mia
+Jeff Wilson,North Texas,mia
+Jaylen Wright,Tennessee,mia
+Isaiah Wynn,Georgia,mia
+Tucker Addington,Sam Houston St.,nwe
+David Andrews,Georgia,nwe
+Alex Austin,Oregon St.,nwe
+Javon Baker,"Alabama,Central Florida",nwe
+Keshawn Banks,San Diego St.,nwe
+Bryce Baringer,Michigan St.,nwe
+Christian Barmore,Alabama,nwe
+Miles Battle,"Mississippi,Utah",nwe
+Jaheim Bell,"South Carolina,Florida St.",nwe
+Ja'Whaun Bentley,Purdue,nwe
+Isaiah Bolden,"Florida St.,Jackson St.",nwe
+Kendrick Bourne,Eastern Washington,nwe
+Kayshon Boutte,LSU,nwe
+Jacoby Brissett,"Florida,North Carolina St.",nwe
+Ben Brown,Mississippi,nwe
+Joe Cardona,Navy,nwe
+Lester Cotton,Alabama,nwe
+Marcellas Dial,"Georgia Military,South Carolina",nwe
+Demario Douglas,Liberty,nwe
+Kyle Dugger,Lenoir-Rhyne,nwe
+Daniel Ekuale,Washington St.,nwe
+Christian Elliss,Idaho,nwe
+Alex Erickson,Wisconsin,nwe
+Antonio Gibson,"East Central CC (MS),Memphis",nwe
+Joe Giles-Harris,Duke,nwe
+Davon Godchaux,LSU,nwe
+Christian Gonzalez,"Colorado,Oregon",nwe
+Jamycal Hasty,Baylor,nwe
+Jaylinn Hawkins,California,nwe
+Hunter Henry,Arkansas,nwe
+Trysten Hill,Central Florida,nwe
+Austin Hooper,Stanford,nwe
+Curtis Jacobs,Penn St.,nwe
+Demontrey Jacobs,"Grambling St.,South Florida",nwe
+Anfernee Jennings,Alabama,nwe
+Terrell Jennings,Florida A&M,nwe
+Eric Johnson,Missouri State,nwe
+Jonathan Jones,Auburn,nwe
+Marcus Jones,"Troy,Houston",nwe
+Truman Jones,Harvard,nwe
+Michael Jordan,Ohio St.,nwe
+Titus Leo,Wagner,nwe
+Nick Leverett,Rice,nwe
+Vederian Lowe,Illinois,nwe
+Marte Mapu,Sacramento St.,nwe
+Ochaun Mathis,"TCU,Nebraska",nwe
+Drake Maye,North Carolina,nwe
+Raekwon McMillan,Ohio St.,nwe
+Joe Milton,"Michigan,Tennessee",nwe
+Yannick Ngakoue,Maryland,nwe
+Chukwuma Okorafor,Western Michigan,nwe
+Michael Onwenu,Michigan,nwe
+K.J. Osborn,"Buffalo,Miami (FL)",nwe
+Jabrill Peppers,Michigan,nwe
+Dell Pettus,Troy,nwe
+Jeremiah Pharms,"Sacramento CC,Delta College,Friends",nwe
+Ja'Lynn Polk,"Texas Tech,Washington",nwe
+Monty Rice,Georgia,nwe
+Layden Robinson,Texas A&M,nwe
+Tyrese Robinson,Oklahoma,nwe
+Jaquelin Roy,LSU,nwe
+Brenden Schooler,"Oregon,Texas",nwe
+Joey Slye,Virginia Tech,nwe
+Lecitus Smith,Virginia Tech,nwe
+Sidy Sow,Eastern Michigan,nwe
+Rhamondre Stevenson,"Cerritos (CA),Oklahoma",nwe
+Cole Strange,Chattanooga,nwe
+Sione Takitaki,BYU,nwe
+Jahlani Tavai,Hawaii,nwe
+Zachary Thomas,San Diego St.,nwe
+Tyquan Thornton,Baylor,nwe
+Joshua Uche,Michigan,nwe
+Caedan Wallace,Penn St.,nwe
+Jack Westover,Washington,nwe
+Keion White,"Old Dominion,Georgia Tech",nwe
+Mitchell Wilcox,South Florida,nwe
+Marco Wilson,Florida,nwe
+Deatrich Wise Jr.,Arkansas,nwe
+Oshane Ximines,Old Dominion,nwe
+Davante Adams,Fresno St.,nyj
+Tony Adams,Illinois,nyj
+Braelon Allen,Wisconsin,nyj
+Zack Bailey,South Carolina,nyj
+Brenden Bates,Kentucky,nyj
+Jarrick Bernard-Converse,"Oklahoma St.,LSU",nyj
+Anders Carlson,Auburn,nyj
+Michael Carter II,Duke,nyj
+Irvin Charles,"Penn St.,Indiana (PA)",nyj
+Chuck Clark,Virginia Tech,nyj
+Micheal Clemons,"Cisco (TX),Texas A&M",nyj
+Tyler Conklin,Central Michigan,nyj
+Malachi Corley,Western Kentucky,nyj
+Ashtyn Davis,California,nyj
+Isaiah Davis,South Dakota St.,nyj
+Brandin Echols,"Northwest Mississippi CC,Kentucky",nyj
+Samuel Eguavoen,Texas Tech,nyj
+Olumuyiwa Fashanu,Penn St.,nyj
+Anthony Firkser,Harvard,nyj
+Leki Fotu,Utah,nyj
+Sauce Gardner,Cincinnati,nyj
+Xavier Gipson,S.F. Austin,nyj
+Breece Hall,Iowa St.,nyj
+Jake Hanson,Oregon,nyj
+Bruce Hector,South Florida,nyj
+Thomas Hennessy,Duke,nyj
+Jalyn Holmes,Ohio St.,nyj
+Jermaine Johnson II,"Independence (KS),Georgia,Florida St.",nyj
+Greg Joseph,Florida Atlantic,nyj
+Javon Kinlaw,South Carolina,nyj
+Zack Kuntz,"Penn St.,Old Dominion",nyj
+Allen Lazard,Iowa St.,nyj
+Alec Lindstrom,Boston Col.,nyj
+Marcelino McCrary-Ball,Indiana,nyj
+Will McDonald,Iowa St.,nyj
+Connor McGovern,Missouri,nyj
+Braiden McGregor,Michigan,nyj
+Takkarist McKinley,UCLA,nyj
+Jalen Mills,LSU,nyj
+Max Mitchell,Louisiana,nyj
+Jarius Monroe,"Nicholls St.,Tulane",nyj
+Thomas Morstead,SMU,nyj
+Morgan Moses,Virginia,nyj
+C.J. Mosley,Alabama,nyj
+Xavier Newman-Johnson,Baylor,nyj
+Kene Nwangwu,Iowa St.,nyj
+Isaiah Oliver,Colorado,nyj
+Riley Patterson,Memphis,nyj
+Haason Reddick,Temple,nyj
+D.J. Reed,Kansas St.,nyj
+Aaron Rodgers,"Butte JC (CA),California",nyj
+Jeremy Ruckert,Ohio St.,nyj
+Wes Schweitzer,San Jose St.,nyj
+Kendall Sheffield,Ohio St.,nyj
+Jamien Sherwood,Auburn,nyj
+Spencer Shrader,"South Florida,Notre Dame",nyj
+John Simpson,Clemson,nyj
+Brandon Smith,Iowa,nyj
+Tyron Smith,USC,nyj
+Qwan'tez Stiggers,None,nyj
+Chazz Surratt,North Carolina,nyj
+Tre Swilling,Georgia Tech,nyj
+Leonard Taylor,Miami (FL),nyj
+Tyrod Taylor,Virginia Tech,nyj
+Solomon Thomas,Stanford,nyj
+Joe Tippmann,Wisconsin,nyj
+Alijah Vera-Tucker,USC,nyj
+Carter Warren,Pittsburgh,nyj
+Eric Watts,Connecticut,nyj
+Mike Williams,Clemson,nyj
+Quincy Williams,Murray St.,nyj
+Quinnen Williams,Alabama,nyj
+Garrett Wilson,Ohio St.,nyj
+Kenny Yeboah,"Temple,Mississippi",nyj
+Greg Zuerlein,"Nebraska-Omaha,Missouri Western St.",nyj
+Nelson Agholor,USC,rav
+Rasheen Ali,Marshall,rav
+Mark Andrews,Oklahoma,rav
+Jalyn Armour-Davis,Alabama,rav
+Malaesala Aumavae-Laulu,"Navarro,Oregon",rav
+Rashod Bateman,Minnesota,rav
+Chris Board,North Dakota St.,rav
+Beau Brade,Maryland,rav
+Ben Cleveland,Georgia,rav
+Chris Collier,"Nassau CC,Wagner,Lock Haven",rav
+Bump Cooper,"San Mateo,Oregon St.",rav
+Daniel Faalele,Minnesota,rav
+Zay Flowers,Boston Col.,rav
+Kyle Hamilton,Notre Dame,rav
+Malik Harrison,Ohio St.,rav
+Deonte Harty,Assumption,rav
+Derrick Henry,Alabama,rav
+Justice Hill,Oklahoma St.,rav
+Ka'dar Hollman,Toledo,rav
+Marlon Humphrey,Alabama,rav
+Adisa Isaac,Penn St.,rav
+Eddie Jackson,Alabama,rav
+Lamar Jackson,Louisville,rav
+Diontae Johnson,Toledo,rav
+Josh Johnson,San Diego,rav
+Josh Jones,Houston,rav
+Travis Jones,Connecticut,rav
+Sanoussi Kane,Purdue,rav
+John Kelly,Tennessee,rav
+Desmond King,Iowa,rav
+Charlie Kolar,Iowa St.,rav
+William Kwenkeu,Temple,rav
+Isaiah Likely,Coastal Carolina,rav
+Tyler Linderbaum,Iowa,rav
+Nnamdi Madubuike,Texas A&M,rav
+Arthur Maulet,Memphis,rav
+Patrick Mekari,California,rav
+Anthony Miller,Memphis,rav
+Keaton Mitchell,East Carolina,rav
+Nick Moore,Georgia,rav
+Yannick Ngakoue,Maryland,rav
+David Ojabo,Michigan,rav
+Odafe Oweh,Penn St.,rav
+Michael Pierce,Samford,rav
+Patrick Ricard,Maine,rav
+Tavius Robinson,"Guelph,Mississippi",rav
+Roger Rosengarten,Washington,rav
+Josh Ross,Michigan,rav
+Trenton Simpson,Clemson,rav
+Steven Sims,Kansas,rav
+Roquan Smith,Georgia,rav
+Ronnie Stanley,Notre Dame,rav
+Brandon Stephens,"UCLA,SMU",rav
+Jordan Stout,"Virginia Tech,Penn St.",rav
+T.J. Tampa,Iowa St.,rav
+Justin Tucker,Texas,rav
+Josh Tupou,Colorado,rav
+Brent Urban,Virginia,rav
+Kyle Van Noy,BYU,rav
+Andrew Vorhees,USC,rav
+Devontez Walker,"North Carolina Central,Kent St.,North Carolina",rav
+Tylan Wallace,Oklahoma St.,rav
+Ar'Darius Washington,TCU,rav
+Broderick Washington Jr.,Texas Tech,rav
+Kristian Welch,Iowa,rav
+Tre'Davious White,LSU,rav
+Nate Wiggins,Clemson,rav
+Marcus Williams,Utah,rav
+Chris Wormley,Michigan,rav
+Cal Adomitis,Pittsburgh,cin
+Erick All,"Michigan,Iowa",cin
+Tycen Anderson,Toledo,cin
+Daijahn Anthony,"Shepherd,Liberty,Mississippi",cin
+Joe Bachie,Michigan St.,cin
+Jordan Battle,Alabama,cin
+Vonn Bell,Ohio St.,cin
+Chase Brown,"Western Michigan,Illinois",cin
+Orlando Brown Jr.,Oklahoma,cin
+Trent Brown,"Georgia Military,Florida",cin
+Jake Browning,Washington,cin
+Joe Burrow,"Ohio St.,LSU",cin
+Jermaine Burton,"Georgia,Alabama",cin
+Alex Cappa,Humboldt St.,cin
+Zachary Carter,Florida,cin
+Ja'Marr Chase,LSU,cin
+Devin Cochran,"Vanderbilt,Georgia Tech",cin
+Jalen Davis,Utah St.,cin
+Akeem Davis-Gaither,Appalachian St.,cin
+Cody Ford,Oklahoma,cin
+Mike Gesicki,Penn St.,cin
+Cam Grandy,"Missouri Western St.,Illinois St.",cin
+Lawrence Guy,Arizona St.,cin
+Trey Hendrickson,Florida Atlantic,cin
+K.J. Henry,Clemson,cin
+Khalil Herbert,"Kansas,Virginia Tech",cin
+Shaka Heyward,Duke,cin
+Tee Higgins,Clemson,cin
+B.J. Hill,North Carolina St.,cin
+Daxton Hill,Michigan,cin
+Trey Hill,Georgia,cin
+Mike Hilton,Mississippi,cin
+Sam Hubbard,Ohio St.,cin
+Tanner Hudson,Southern Arkansas,cin
+Andrei Iosivas,Princeton,cin
+Trenton Irwin,Stanford,cin
+DJ Ivey,Miami (FL),cin
+McKinnley Jackson,Texas A&M,cin
+Kris Jenkins,Michigan,cin
+Cedric Johnson,Mississippi,cin
+Charlie Jones,"Buffalo,Iowa,Purdue",cin
+Ted Karras,Illinois,cin
+Jaxson Kirkland,Washington,cin
+Matt Lee,"Central Florida,Miami (FL)",cin
+Tanner McLachlan,"Southern Utah,Arizona",cin
+Evan McPherson,Florida,cin
+Kendall Milton,Georgia,cin
+Amarius Mims,Georgia,cin
+Zack Moss,Utah,cin
+Myles Murphy,Clemson,cin
+Josh Newton,"La-Monroe,TCU",cin
+Maema Njongmeta,Wisconsin,cin
+Joseph Ossai,Texas,cin
+Germaine Pratt,North Carolina St.,cin
+Kendric Pryor,Wisconsin,cin
+Sheldon Rankins,Louisville,cin
+Ryan Rehkow,BYU,cin
+Drew Sample,Washington,cin
+Geno Stone,Iowa,cin
+Andrew Stueber,Michigan,cin
+Cam Taylor-Britt,Nebraska,cin
+Jay Tufele,USC,cin
+DJ Turner,Michigan,cin
+Cordell Volson,North Dakota St.,cin
+Isaiah Williams,Illinois,cin
+Trayveon Williams,Texas A&M,cin
+Logan Wilson,Wyoming,cin
+Marco Wilson,Florida,cin
+Cade York,LSU,cin
+Jordan Akins,Central Florida,cle
+Chigozie Anusiem,"California,Colorado St.",cle
+Brenden Bates,Kentucky,cle
+D'Anthony Bell,"Iowa Central,Butler (KS),West Florida",cle
+David Bell,Purdue,cle
+Joel Bitonio,Nevada,cle
+Corey Bojorquez,"Cerritos (CA),New Mexico",cle
+Jowon Briggs,"Virginia,Cincinnati",cle
+Gary Brightwell,Arizona,cle
+Tony Brown,Alabama,cle
+Devin Bush Jr.,Michigan,cle
+Geron Christian,Louisville,cle
+Nick Chubb,Georgia,cle
+Javion Cohen,"Alabama,Miami (FL)",cle
+Jack Conklin,Michigan St.,cle
+Amari Cooper,Alabama,cle
+Jaelon Darden,North Texas,cle
+Kaden Davis,"Butler (KS),NW Missouri St.",cle
+Grant Delpit,LSU,cle
+Mohamoud Diabate,"Florida,Utah",cle
+Michael Dunn,Maryland,cle
+Michael Dwumfour,"Michigan,Rutgers",cle
+Chris Edmonds,"Samford,Arizona St.",cle
+Martin Emerson,Mississippi St.,cle
+Tony Fields,"Arizona,West Virginia",cle
+Jerome Ford,"Alabama,Cincinnati",cle
+Mike Ford,SE Missouri St.,cle
+D'Onta Foreman,Texas,cle
+Myles Garrett,Texas A&M,cle
+Kahlef Hailassie,"Oregon,Independence (KS),Western Kentucky",cle
+Michael Hall,Ohio St.,cle
+Myles Harden,South Dakota,cle
+Nick Harris,Washington,cle
+Shelby Harris,Illinois St.,cle
+Ronnie Hickman,Ohio St.,cle
+Jordan Hicks,Texas,cle
+Dustin Hopkins,Florida St.,cle
+James Houston,"Florida,Jackson St.",cle
+James Hudson,"Michigan,Cincinnati",cle
+Khaleke Hudson,Michigan,cle
+Charley Hughlett,Central Florida,cle
+Maurice Hurst Jr.,Michigan,cle
+Germain Ifedi,Texas A&M,cle
+Quinton Jefferson,Maryland,cle
+Jerry Jeudy,Alabama,cle
+Dawand Jones,Ohio St.,cle
+Sam Kamara,Stony Brook,cle
+Jacob Kibodi,"Texas A&M,Incarnate Word,Louisiana",cle
+T.Y. McGill,North Carolina St.,cle
+Isaiah McGuire,Missouri,cle
+Rodney McLeod,Virginia,cle
+Cameron Mitchell,Northwestern,cle
+Elijah Moore,Mississippi,cle
+Greg Newsome II,Northwestern,cle
+David Njoku,Miami (FL),cle
+Ogbonnia Okoronkwo,Oklahoma,cle
+Jeremiah Owusu-Koramoah,Notre Dame,cle
+Riley Patterson,Memphis,cle
+Ethan Pocic,LSU,cle
+James Proche,SMU,cle
+Winston Reid,Weber St.,cle
+Elerson Smith,Northern Iowa,cle
+Za'Darius Smith,"East Mississippi CC,Kentucky",cle
+Pierre Strong,South Dakota St.,cle
+Rex Sunahara,"Rhode Island,West Virginia",cle
+Geoff Swaim,Texas,cle
+Wyatt Teller,Virginia Tech,cle
+Cameron Thomas,San Diego St.,cle
+Dorian Thompson-Robinson,UCLA,cle
+Juan Thornhill,Virginia,cle
+Jamari Thrash,"Georgia St.,Louisville",cle
+Cedric Tillman,Tennessee,cle
+Dalvin Tomlinson,Alabama,cle
+Kadarius Toney,Florida,cle
+Denzel Ward,Ohio St.,cle
+Deshaun Watson,Clemson,cle
+Nathaniel Watson,Mississippi St.,cle
+Blake Whiteheart,Wake Forest,cle
+Jedrick Wills Jr.,Alabama,cle
+Jameis Winston,Florida St.,cle
+Michael Woods II,"Arkansas,Oklahoma",cle
+Alex Wright,Ala-Birmingham,cle
+Bailey Zappe,"Houston Christian,Western Kentucky",cle
+Zak Zinter,Michigan,cle
+Montravius Adams,Auburn,pit
+Kyle Allen,"Texas A&M,Houston",pit
+Calvin Anderson,"Rice,Texas",pit
+Spencer Anderson,Maryland,pit
+Calvin Austin III,Memphis,pit
+Keeanu Benton,Wisconsin,pit
+Beanie Bishop,"Western Kentucky,Minnesota,West Virginia",pit
+Chris Boswell,Rice,pit
+James Daniels,Iowa,pit
+Terrell Edmunds,Virginia Tech,pit
+DeShon Elliott,Texas,pit
+Jalen Elliott,Notre Dame,pit
+Troy Fautanu,Washington,pit
+Justin Fields,"Georgia,Ohio St.",pit
+Minkah Fitzpatrick,Alabama,pit
+Zach Frazier,West Virginia,pit
+Pat Freiermuth,Penn St.,pit
+Thomas Graham,Oregon,pit
+Najee Harris,Alabama,pit
+Nick Herbig,Wisconsin,pit
+Cameron Heyward,Ohio St.,pit
+Connor Heyward,Michigan St.,pit
+Alex Highsmith,Charlotte,pit
+Donte Jackson,LSU,pit
+Van Jefferson,"Mississippi,Florida",pit
+Brandon Johnson,"Tennessee,Central Florida",pit
+Cameron Johnston,Ohio St.,pit
+Broderick Jones,Georgia,pit
+Damontae Kazee,San Diego St.,pit
+Miles Killebrew,Southern Utah,pit
+Christian Kuntz,Duquesne,pit
+DeMarvin Leal,Texas A&M,pit
+Eku Leota,"Northwestern,Auburn",pit
+Isaiahh Loudermilk,Wisconsin,pit
+Dean Lowry,Northwestern,pit
+Tyler Matakevich,Temple,pit
+Ryan McCollum,Texas A&M,pit
+Mason McCormick,South Dakota St.,pit
+Scott Miller,Bowling Green,pit
+Jeremiah Moon,Florida,pit
+Dan Moore,Texas A&M,pit
+Adetokunbo Ogundeji,Notre Dame,pit
+Larry Ogunjobi,Charlotte,pit
+Cordarrelle Patterson,Tennessee,pit
+George Pickens,Georgia,pit
+James Pierre,Florida Atlantic,pit
+Joey Porter Jr.,Penn St.,pit
+MyCole Pruitt,Southern Illinois,pit
+Patrick Queen,LSU,pit
+Elandon Roberts,Houston,pit
+Mark Robinson,"Presbyterian,SE Missouri St.,Mississippi",pit
+Darius Rush,South Carolina,pit
+Max Scharping,Northern Illinois,pit
+Isaac Seumalo,Oregon St.,pit
+Aaron Shampklin,Harvard,pit
+Ben Skowronek,"Northwestern,Notre Dame",pit
+Preston Smith,Mississippi St.,pit
+Cameron Sutton,Tennessee,pit
+Cory Trice,Purdue,pit
+Corliss Waitman,South Alabama,pit
+Jonathan Ward,Central Michigan,pit
+Jaylen Warren,"Snow College (UT),Utah St.,Oklahoma St.",pit
+Darnell Washington,Georgia,pit
+T.J. Watt,Wisconsin,pit
+Mike Williams,Clemson,pit
+Rodney Williams,UT Martin,pit
+Payton Wilson,North Carolina St.,pit
+Roman Wilson,Michigan,pit
+Russell Wilson,"Wisconsin,North Carolina St.",pit
+Cam Akers,Florida St.,htx
+Azeez Al-Shaair,Florida Atlantic,htx
+Will Anderson,Alabama,htx
+Denico Autry,"East Mississippi CC,Mississippi St.",htx
+Derek Barnett,Tennessee,htx
+Andrew Beck,Texas,htx
+Kris Boyd,Texas,htx
+Nick Broeker,Mississippi,htx
+British Brooks,North Carolina,htx
+Myles Bryant,Washington,htx
+Calen Bullock,USC,htx
+Solomon Byrd,"Wyoming,USC",htx
+Nico Collins,Michigan,htx
+Khalil Davis,Nebraska,htx
+Austin Deculus,LSU,htx
+Tank Dell,"Alabama A&M,Independence (KS),Houston",htx
+Stefon Diggs,Maryland,htx
+Mario Edwards,Florida St.,htx
+Ka'imi Fairbairn,UCLA,htx
+Folorunso Fatukasi,Connecticut,htx
+Blake Fisher,Notre Dame,htx
+Kendrick Green,Illinois,htx
+Kenyon Green,Texas A&M,htx
+Troy Hairston,Central Michigan,htx
+Jake Hansen,Illinois,htx
+Christian Harris,Alabama,htx
+Neville Hewitt,Marshall,htx
+Jamal Hill,Oregon,htx
+Kurt Hinish,Notre Dame,htx
+Ka'dar Hollman,Toledo,htx
+Dylan Horton,"New Mexico,TCU",htx
+Tytus Howard,Alabama St.,htx
+Jerry Hughes,TCU,htx
+Danielle Hunter,LSU,htx
+Xavier Hutchinson,"Blinn College (TX),Iowa St.",htx
+Diontae Johnson,Toledo,htx
+Brevin Jordan,Miami (FL),htx
+Desmond King,Iowa,htx
+Kamari Lassiter,Georgia,htx
+Shaq Mason,Georgia Tech,htx
+John Metchie,Alabama,htx
+Davis Mills,Stanford,htx
+Joe Mixon,Oklahoma,htx
+Eric Murray,Minnesota,htx
+Dare Ogunbowale,Wisconsin,htx
+Jeff Okudah,Ohio St.,htx
+Jarrett Patterson,Notre Dame,htx
+Del'Shawn Phillips,Illinois,htx
+Dameon Pierce,Florida,htx
+Jalen Pitre,Baylor,htx
+Teagan Quitoriano,Oregon St.,htx
+D'Angelo Ross,New Mexico,htx
+Dalton Schultz,Stanford,htx
+Juice Scruggs,Penn St.,htx
+Tim Settle,Virginia Tech,htx
+Steven Sims,Kansas,htx
+Irv Smith Jr.,Alabama,htx
+M.J. Stewart,North Carolina,htx
+Derek Stingley Jr.,LSU,htx
+Cade Stover,Ohio St.,htx
+C.J. Stroud,Ohio St.,htx
+J.J. Taylor,Arizona,htx
+Zachary Thomas,San Diego St.,htx
+Henry To'oTo'o,"Tennessee,Alabama",htx
+Tommy Togiai,Ohio St.,htx
+Tommy Townsend,Florida,htx
+Laremy Tunsil,Mississippi,htx
+Zeke Turner,Washington,htx
+Jimmie Ward,Northern Illinois,htx
+Jared Wayne,Pittsburgh,htx
+Rashad Weaver,Pittsburgh,htx
+Jon Weeks,Baylor,htx
+Devin White,LSU,htx
+Robert Woods,USC,htx
+Russ Yeast,"Louisville,Kansas St.",htx
+Adetomiwa Adebawore,Northwestern,clt
+Mo Alie-Cox,Virginia Commonwealth,clt
+Liam Anderson,Holy Cross,clt
+Genard Avery,Memphis,clt
+Julian Blackmon,Utah,clt
+Tanor Bortolini,Wisconsin,clt
+Julius Brents,"Iowa,Kansas St.",clt
+Taven Bryan,Florida,clt
+DeForest Buckner,Oregon,clt
+Jaylon Carlies,Missouri,clt
+Nick Cross,Maryland,clt
+Raekwon Davis,Alabama,clt
+Trevor Denbow,"Navarro,SMU",clt
+Josh Downs,North Carolina,clt
+Ashton Dulin,Malone,clt
+Joe Flacco,"Pittsburgh,Delaware",clt
+Dallis Flowers,"Grand View,Pittsburg St.",clt
+Tre Flowers,Oklahoma St.,clt
+Zaire Franklin,Syracuse,clt
+Blake Freeland,BYU,clt
+Will Fries,Penn St.,clt
+Matt Gay,Utah,clt
+Mark Glowinski,"Lackawanna,West Virginia",clt
+Matt Goncalves,Pittsburgh,clt
+Tyler Goodson,Iowa,clt
+Adam Gotsis,Georgia Tech,clt
+Anthony Gould,Oregon St.,clt
+Kylen Granson,"Rice,SMU",clt
+Ronnie Harrison,Alabama,clt
+Evan Hull,Northwestern,clt
+Jaylon Jones,Texas A&M,clt
+Kelvin Joseph,"LSU,Kentucky",clt
+Ryan Kelly,Alabama,clt
+Chris Lammons,South Carolina,clt
+Isaiah Land,Florida A&M,clt
+Laiatu Latu,"Washington,UCLA",clt
+Tyquan Lewis,Ohio St.,clt
+David Long,Michigan,clt
+Atonio Mafi,UCLA,clt
+Will Mallory,Miami (FL),clt
+Cameron McGrone,Michigan,clt
+Adonai Mitchell,"Georgia,Texas",clt
+Kenny Moore,Valdosta St.,clt
+Quenton Nelson,Notre Dame,clt
+Dayo Odeyingbo,Vanderbilt,clt
+Andrew Ogletree,"Findlay,Youngstown St.",clt
+Segun Olubi,"Col. of Idaho,Saddleback College,Harding,San Diego St.",clt
+Kwity Paye,Michigan,clt
+Alec Pierce,Cincinnati,clt
+Danny Pinter,Ball St.,clt
+Michael Pittman Jr.,USC,clt
+Bernhard Raimann,Central Michigan,clt
+Luke Rhodes,William & Mary,clt
+Anthony Richardson,Florida,clt
+Rigoberto Sanchez,Hawaii,clt
+Trey Sermon,"Oklahoma,Ohio St.",clt
+Spencer Shrader,"South Florida,Notre Dame",clt
+Braden Smith,Auburn,clt
+E.J. Speed,Tarleton St.,clt
+Grover Stewart,Albany State (GA),clt
+Grant Stuard,Houston,clt
+Jonathan Taylor,Wisconsin,clt
+Rodney Thomas II,Yale,clt
+Laquon Treadwell,Mississippi,clt
+Dalton Tucker,Marshall,clt
+Samuel Womack,Toledo,clt
+Yasir Abdullah,Louisville,jax
+Arik Armstead,Oregon,jax
+Tank Bigsby,Auburn,jax
+Christian Braswell,Rutgers,jax
+Montaric Brown,Arkansas,jax
+Tyson Campbell,Georgia,jax
+Joshua Cephus,Texas-San Antonio,jax
+Andre Cisco,Syracuse,jax
+Ezra Cleveland,Boise St.,jax
+Myles Cole,"La-Monroe,Texas Tech",jax
+DJ Coleman,"Jacksonville St.,Missouri",jax
+Logan Cooke,Mississippi St.,jax
+Elijah Cooks,"Nevada,San Jose St.",jax
+Ronald Darby,Florida St.,jax
+Gabriel Davis,Central Florida,jax
+Josiah Deguara,Cincinnati,jax
+Devin Duvernay,Texas,jax
+Terrell Edmunds,Virginia Tech,jax
+Evan Engram,Mississippi,jax
+Travis Etienne,Clemson,jax
+Luke Farrell,Ohio St.,jax
+Tre Flowers,Oklahoma St.,jax
+Luke Fortner,Kentucky,jax
+Javon Foster,Missouri,jax
+Joe Gaziano,Northwestern,jax
+Joe Giles-Harris,Duke,jax
+DaVon Hamilton,Ohio St.,jax
+Blake Hance,Northwestern,jax
+Anton Harrison,Oklahoma,jax
+Josh Hines-Allen,Kentucky,jax
+Cooper Hodges,Appalachian St.,jax
+Matthew Jackson,Eastern Kentucky,jax
+Jordan Jefferson,"West Virginia,LSU",jax
+Antonio Johnson,Texas A&M,jax
+Caleb Johnson,Houston Christian,jax
+D'Ernest Johnson,South Florida,jax
+Jarrian Jones,"Mississippi St.,Florida St.",jax
+Mac Jones,Alabama,jax
+Tim Jones,Southern Miss,jax
+Christian Kirk,Texas A&M,jax
+Tyler Lacy,Oklahoma St.,jax
+Trevor Lawrence,Clemson,jax
+Jeremiah Ledbetter,Arkansas,jax
+Cam Little,Arkansas,jax
+Walker Little,Stanford,jax
+Devin Lloyd,Utah,jax
+Ross Matiscik,Baylor,jax
+Ventrell Miller,Florida,jax
+Mitch Morse,Missouri,jax
+Chad Muma,Wyoming,jax
+Tanner Muse,Clemson,jax
+Foyesade Oluokun,Yale,jax
+Esezi Otomewo,Minnesota,jax
+Anthony Pittman,Wayne State (MI),jax
+Deantre Prince,"Northeast Mississippi CC,Mississippi",jax
+Josh Reynolds,Texas A&M,jax
+Roy Robertson-Harris,Texas-El Paso,jax
+Cam Robinson,Alabama,jax
+Keilan Robinson,"Alabama,Texas",jax
+Darnell Savage Jr.,Maryland,jax
+Brandon Scherff,Iowa,jax
+Maason Smith,LSU,jax
+Brenton Strange,Penn St.,jax
+Brian Thomas,LSU,jax
+Daniel Thomas,Auburn,jax
+Austin Trammell,Rice,jax
+Cole Van Lanen,Wisconsin,jax
+Travon Walker,Georgia,jax
+Parker Washington,Penn St.,jax
+Andrew Wingard,Wyoming,jax
+Jamal Adams,LSU,oti
+Abdullah Anderson,Bucknell,oti
+Tre Avery,"Toledo,Rutgers",oti
+Chidobe Awuzie,Colorado,oti
+Darrell Baker,Georgia Southern,oti
+Jerome Baker,Ohio St.,oti
+Tyler Boyd,Pittsburgh,oti
+Chandler Brewer,Middle Tenn. St.,oti
+Kendell Brooks,"North Greenville,Michigan St.",oti
+Mike Brown,Miami (OH),oti
+Jarvis Brownlee,"Florida St.,Louisville",oti
+Daniel Brunskill,San Diego St.,oti
+Logan Bruss,Wisconsin,oti
+Treylon Burks,Arkansas,oti
+Julius Chestnut,Sacred Heart,oti
+Keondre Coburn,Texas,oti
+Morgan Cox,Tennessee,oti
+Lloyd Cushenberry III,LSU,oti
+Quandre Diggs,Texas,oti
+Khalid Duke,Kansas St.,oti
+Jaelyn Duncan,Maryland,oti
+Nick Folk,Arizona,oti
+Ali Gaye,"Arizona Western,Garden City (KS),LSU",oti
+Jack Gibbens,"Abilene Christian,Minnesota",oti
+Luke Gifford,Nebraska,oti
+Cedric Gray,North Carolina,oti
+Arlington Hambright,"Garden City (KS),Oklahoma St.,Colorado",oti
+Justin Hardee,Illinois,oti
+Jaylen Harrell,Michigan,oti
+Amani Hooker,Iowa,oti
+DeAndre Hopkins,Clemson,oti
+Jha'Quan Jackson,Tulane,oti
+Gabe Jeudy-Lally,"Vanderbilt,BYU,Tennessee",oti
+Ernest Jones,South Carolina,oti
+Sebastian Joseph-Day,Rutgers,oti
+Joshua Kelley,"UC Davis,UCLA",oti
+Arden Key,LSU,oti
+Mason Kinsey,Berry,oti
+Harold Landry,Boston Col.,oti
+JC Latham,Alabama,oti
+Corey Levin,Chattanooga,oti
+Will Levis,"Penn St.,Kentucky",oti
+James Lynch,Baylor,oti
+Tay Martin,"Washington St.,Oklahoma St.",oti
+David Martin-Robinson,Temple,oti
+Roger McCreary,Auburn,oti
+Raekwon McMillan,Ohio St.,oti
+Caleb Murphy,"Grand Valley St.,Ferris St.",oti
+Kenneth Murray,Oklahoma,oti
+Brayden Narveson,"Iowa St.,Western Kentucky,North Carolina St.",oti
+Thomas Odukoya,"West Hills-Coalinga,Garden City (KS),Eastern Michigan",oti
+John Ojukwu,Boise St.,oti
+Chigoziem Okonkwo,Maryland,oti
+Bryce Oliver,"Kentucky,Youngstown St.",oti
+Gervarrius Owens,"NE Oklahoma A&M,Houston",oti
+Nicholas Petit-Frere,Ohio St.,oti
+Tony Pollard,Memphis,oti
+Isaiah Prince,Ohio St.,oti
+Dillon Radunz,North Dakota St.,oti
+Otis Reese,"Georgia,Mississippi",oti
+Calvin Ridley,Alabama,oti
+Mason Rudolph,Oklahoma St.,oti
+Andrew Rupcich,Culver-Stockton,oti
+Jeffery Simmons,Mississippi St.,oti
+Peter Skoronski,Northwestern,oti
+L'Jarius Sneed,Louisiana Tech,oti
+Tyjae Spears,Tulane,oti
+Ryan Stonehouse,Colorado St.,oti
+T'Vondre Sweat,Texas,oti
+Nick Vannett,Ohio St.,oti
+Leroy Watson,"Hutchinson (KS),Texas-San Antonio",oti
+Nick Westbrook-Ikhine,Indiana,oti
+Josh Whyle,Cincinnati,oti
+James Williams,Miami (FL),oti
+Julius Wood,"Blinn College (TX),East Carolina",oti
+Daryl Worley,West Virginia,oti
+Matthew Wright,Central Florida,oti
+Kris Abrams-Draine,Missouri,den
+Nate Adkins,"East Tennessee St.,South Carolina",den
+Kwon Alexander,LSU,den
+Zach Allen,Boston Col.,den
+Tyler Badie,Missouri,den
+Levelle Bailey,Fresno St.,den
+Cody Barton,Utah,den
+Garett Bolles,"Snow College (UT),Utah",den
+Nik Bonitto,Oklahoma,den
+Baron Browning,Ohio St.,den
+Michael Burton,Rutgers,den
+Jonathon Cooper,Ohio St.,den
+Frank Crum,Wyoming,den
+Zach Cunningham,Vanderbilt,den
+Riley Dixon,Syracuse,den
+Greg Dulcich,UCLA,den
+Jonah Elliss,Utah,den
+Audric Estime,Notre Dame,den
+Cameron Fleming,Stanford,den
+Alex Forsyth,Oregon,den
+Mitchell Fraboni,Arizona St.,den
+Troy Franklin,Oregon,den
+John Franklin-Myers,S.F. Austin,den
+Lil'Jordan Humphrey,Texas,den
+Jordan Jackson,Air Force,den
+Brandon Jones,Texas,den
+D.J. Jones,"East Mississippi CC,Mississippi",den
+Devon Key,Western Kentucky,den
+Lucas Krull,"Jefferson,Florida,Pittsburgh",den
+P.J. Locke,Texas,den
+Wil Lutz,Georgia St.,den
+Damarri Mathis,Pittsburgh,den
+Tanner McCalister,"Oklahoma St.,Ohio St.",den
+Mike McGlinchey,Notre Dame,den
+Jaleel McLaughlin,"Notre Dame (OH),Youngstown St.",den
+Ja'Quan McMillian,East Carolina,den
+Quinn Meinerz,Wisconsin–Whitewater,den
+Marvin Mims,Oklahoma,den
+Riley Moss,Iowa,den
+Bo Nix,"Auburn,Oregon",den
+Alex Palczewski,Illinois,den
+Matt Peart,Connecticut,den
+Ben Powers,Oklahoma,den
+Josh Reynolds,Texas A&M,den
+Malcolm Roach,Texas,den
+Drew Sanders,"Alabama,Arkansas",den
+Alex Singleton,Montana St.,den
+JL Skinner,Boise St.,den
+Keidron Smith,"Mississippi,Kentucky",den
+Tremon Smith,Central Arkansas,den
+Jarrett Stidham,"Baylor,Auburn",den
+Justin Strnad,Wake Forest,den
+Patrick Surtain II,Alabama,den
+Courtland Sutton,SMU,den
+Reese Taylor,"Indiana,Purdue",den
+Calvin Throckmorton,Oregon,den
+Dondrea Tillman,Indiana (PA),den
+Adam Trautman,Dayton,den
+Eyioma Uwazurike,Iowa St.,den
+Devaughn Vele,Utah,den
+Levi Wallace,Alabama,den
+Blake Watson,"Old Dominion,Memphis",den
+Luke Wattenberg,Washington,den
+Kristian Welch,Iowa,den
+Javonte Williams,North Carolina,den
+Felix Anudike-Uzomah,Kansas St.,kan
+Matt Araiza,San Diego St.,kan
+Nick Bolton,Missouri,kan
+Swayze Bozeman,"Copiah-Lincoln CC,Southern Miss",kan
+Marquise Brown,"College of the Canyons (CA),Oklahoma",kan
+Deon Bush,Miami (FL),kan
+Harrison Butker,Georgia Tech,kan
+Mike Caliendo,Western Michigan,kan
+Leo Chenal,Wisconsin,kan
+Cole Christiansen,Army,kan
+Jack Cochrane,South Dakota,kan
+Chamarri Conner,Virginia Tech,kan
+Bryan Cook,"Howard,Cincinnati",kan
+Baylor Cupp,"Texas A&M,Texas Tech",kan
+Michael Danna,"Central Michigan,Michigan",kan
+Ethan Driskell,Marshall,kan
+Anthony Firkser,Harvard,kan
+Jody Fortson,Valdosta St.,kan
+Noah Gray,Duke,kan
+C.J. Hanson,Holy Cross,kan
+Mecole Hardman,Georgia,kan
+Peyton Hendershot,Indiana,kan
+Malik Herring,Georgia,kan
+Jaden Hicks,Washington St.,kan
+DeAndre Hopkins,Clemson,kan
+Creed Humphrey,Oklahoma,kan
+D.J. Humphries,Florida,kan
+Kareem Hunt,Toledo,kan
+Keaontay Ingram,"Texas,USC",kan
+Nazeeh Johnson,Marshall,kan
+Cam Jones,Indiana,kan
+Chris Jones,Mississippi St.,kan
+Nic Jones,Ball St.,kan
+George Karlaftis III,Purdue,kan
+Travis Kelce,Cincinnati,kan
+Blake Lynch,Baylor,kan
+Patrick Mahomes,Texas Tech,kan
+Trent McDuffie,Washington,kan
+Skyy Moore,Western Michigan,kan
+Wanya Morris,"Tennessee,Oklahoma",kan
+Derrick Nnadi,Florida St.,kan
+Hunter Nourzad,"Cornell,Penn St.",kan
+Chris Oladokun,"South Florida,Samford,South Dakota St.",kan
+Charles Omenihu,Texas,kan
+Isiah Pacheco,Rutgers,kan
+Mike Pennel,"Arizona St.,Colorado State-Pueblo",kan
+Samaje Perine,Oklahoma,kan
+Justin Reid,Stanford,kan
+Nikko Remigio,"California,Fresno St.",kan
+Rashee Rice,SMU,kan
+Christian Roland-Wallace,"Arizona,USC",kan
+Justyn Ross,Clemson,kan
+Spencer Shrader,"South Florida,Notre Dame",kan
+Trey Smith,Tennessee,kan
+JuJu Smith-Schuster,USC,kan
+Carson Steele,"Ball St.,UCLA",kan
+Kingsley Suamataia,"Oregon,BYU",kan
+Jawaan Taylor,Florida,kan
+Keith Taylor,Washington,kan
+Cameron Thomas,San Diego St.,kan
+Joe Thuney,North Carolina St.,kan
+Drue Tranquill,Notre Dame,kan
+Marlon Tuipulotu,USC,kan
+Joshua Uche,Michigan,kan
+Montrell Washington,Samford,kan
+Jaylen Watson,"Washington St.,Ventura College",kan
+Justin Watson,Pennsylvania,kan
+Carson Wentz,North Dakota St.,kan
+Tershawn Wharton,Missouri S&T,kan
+Jared Wiley,"Texas,TCU",kan
+Joshua Williams,Fayetteville St.,kan
+James Winchester,Oklahoma,kan
+Xavier Worthy,Texas,kan
+Matthew Wright,Central Florida,kan
+Ameer Abdullah,Nebraska,rai
+Davante Adams,Fresno St.,rai
+Alex Bachman,Wake Forest,rai
+Jakorian Bennett,"Hutchinson (KS),Maryland",rai
+Jacob Bobenmoyer,Northern Colorado,rai
+Brock Bowers,Georgia,rai
+Harrison Bryant,Florida Atlantic,rai
+Amari Burney,Florida,rai
+Adam Butler,Vanderbilt,rai
+Matthew Butler,Tennessee,rai
+Daniel Carlson,Auburn,rai
+Andre Carter II,Army,rai
+Zachary Carter,Florida,rai
+K'Lavon Chaisson,LSU,rai
+AJ Cole III,North Carolina St.,rai
+Chris Collier,"Nassau CC,Wagner,Lock Haven",rai
+Maxx Crosby,Eastern Michigan,rai
+Divine Deablo,Virginia Tech,rai
+Tommy Eichenberg,Ohio St.,rai
+Marcus Epps,Wyoming,rai
+Amari Gainer,"Florida St.,North Carolina",rai
+Delmar Glaze,Maryland,rai
+Thomas Harper,"Oklahoma St.,Notre Dame",rai
+Nate Hobbs,Illinois,rai
+Darnay Holmes,UCLA,rai
+Andre James,UCLA,rai
+John Jenkins,"Mississippi Gulf Coast CC,Georgia",rai
+Jack Jones,"USC,Moorpark College,Arizona St.",rai
+Kyu Blu Kelly,Stanford,rai
+Ramel Keyton,Tennessee,rai
+Dylan Laube,New Hampshire,rai
+Jonah Laulu,"Hawaii,Oklahoma",rai
+Terrace Marshall Jr.,LSU,rai
+Luke Masterson,Wake Forest,rai
+Alexander Mattison,Boise St.,rai
+Kana'i Mauga,USC,rai
+Michael Mayer,Notre Dame,rai
+Tyreik McAllister,Charleston (WV),rai
+Sincere McCormick,Texas-San Antonio,rai
+Jordan Meredith,Western Kentucky,rai
+Jakobi Meyers,North Carolina St.,rai
+Kolton Miller,UCLA,rai
+Gardner Minshew II,"Northwest Mississippi CC,East Carolina,Washington St.",rai
+Tre'von Moehrig,TCU,rai
+Thayer Munford,Ohio St.,rai
+Aidan O'Connell,Purdue,rai
+Dylan Parham,Memphis,rai
+Andrus Peat,Stanford,rai
+Isaiah Pola-Mao,USC,rai
+Jackson Powers-Johnson,Oregon,rai
+Decamerion Richardson,Mississippi St.,rai
+Desmond Ridder,Cincinnati,rai
+Janarius Robinson,Florida St.,rai
+John Samuel Shenker,Auburn,rai
+Justin Shorter,"Penn St.,Florida",rai
+Nesta Jade Silvera,"Miami (FL),Arizona St.",rai
+Christopher Smith,Georgia,rai
+Charles Snowden,Virginia,rai
+Robert Spillane,Western Michigan,rai
+Trey Taylor,Air Force,rai
+Tre Tucker,Cincinnati,rai
+DJ Turner,"Maryland,Pittsburgh",rai
+Sam Webb,Missouri Western St.,rai
+Zamir White,Georgia,rai
+Cody Whitehair,Kansas St.,rai
+Kristian Wilkerson,SE Missouri St.,rai
+Christian Wilkins,Clemson,rai
+Tyree Wilson,"Texas A&M,Texas Tech",rai
+Joe Alt,Notre Dame,sdg
+Eli Apple,Ohio St.,sdg
+Dicaprio Bootle,Nebraska,sdg
+Joey Bosa,Ohio St.,sdg
+Bradley Bozeman,Alabama,sdg
+DJ Chark,LSU,sdg
+Junior Colson,Michigan,sdg
+Derius Davis,TCU,sdg
+Cameron Dicker,Texas,sdg
+Will Dissly,Washington,sdg
+J.K. Dobbins,Ohio St.,sdg
+Bud Dupree,Kentucky,sdg
+Troy Dye,Oregon,sdg
+Justin Eboigbe,Alabama,sdg
+Gus Edwards,"Miami (FL),Rutgers",sdg
+Simi Fehoko,Stanford,sdg
+AJ Finley,Mississippi,sdg
+Tucker Fisk,Stanford,sdg
+Dez Fitzpatrick,Louisville,sdg
+Poona Ford,Texas,sdg
+Morgan Fox,Colorado State-Pueblo,sdg
+Kristian Fulton,LSU,sdg
+Alohi Gilman,"Navy,Notre Dame",sdg
+Josh Harris,Auburn,sdg
+Cam Hart,Notre Dame,sdg
+Hassan Haskins,Michigan,sdg
+Taylor Heinicke,Old Dominion,sdg
+Daiyan Henley,"Nevada,Washington St.",sdg
+Justin Herbert,Oregon,sdg
+Hayden Hurst,South Carolina,sdg
+Eddie Jackson,Alabama,sdg
+Brenden Jaimes,Nebraska,sdg
+Derwin James,Florida St.,sdg
+Tony Jefferson,Oklahoma,sdg
+Jaylen Johnson,"Georgia,East Carolina",sdg
+Zion Johnson,"Davidson,Boston Col.",sdg
+Quentin Johnston,TCU,sdg
+Deane Leonard,"Calgary,Mississippi",sdg
+Blake Lynch,Baylor,sdg
+Khalil Mack,Buffalo,sdg
+Scott Matlock,Boise St.,sdg
+Marcus Maye,Florida,sdg
+Ladd McConkey,Georgia,sdg
+Jordan McFadden,Clemson,sdg
+Elijah Molden,Washington,sdg
+Caleb Murphy,"Grand Valley St.,Ferris St.",sdg
+Sam Mustipher,Notre Dame,sdg
+Nick Niemann,Iowa,sdg
+Otito Ogbonnia,UCLA,sdg
+Josh Palmer,Tennessee,sdg
+Jaret Patterson,Buffalo,sdg
+Denzel Perryman,Miami (FL),sdg
+Trey Pipkins,Sioux Falls,sdg
+Shaquille Quarterman,Miami (FL),sdg
+Jalen Reagor,TCU,sdg
+Brenden Rice,"Colorado,USC",sdg
+Jamaree Salyer,Georgia,sdg
+Asante Samuel Jr.,Florida St.,sdg
+Foster Sarell,Stanford,sdg
+JK Scott,Alabama,sdg
+Laviska Shenault Jr.,Colorado,sdg
+Rashawn Slater,Northwestern,sdg
+Stone Smartt,"Northern Arizona,Riverside CC,Old Dominion",sdg
+Tarheeb Still,Maryland,sdg
+Teair Tart,Florida International,sdg
+Ja'Sir Taylor,Wake Forest,sdg
+Eric Tomlinson,Texas-El Paso,sdg
+Tuli Tuipulotu,USC,sdg
+Kimani Vidal,Troy,sdg
+Kendall Williamson,Stanford,sdg
+Bryan Anger,California,dal
+Brandon Aubrey,Notre Dame,dal
+T.J. Bass,"Butte JC (CA),Oregon",dal
+Cooper Beebe,Kansas St.,dal
+Markquese Bell,Florida A&M,dal
+DaRon Bland,"Sacramento St.,Fresno St.",dal
+Andrew Booth,Clemson,dal
+Jalen Brooks,South Carolina,dal
+Josh Butler,Michigan St.,dal
+Caelen Carson,Wake Forest,dal
+Damone Clark,LSU,dal
+Dalvin Cook,Florida St.,dal
+Brandin Cooks,Oregon St.,dal
+Trevon Diggs,Alabama,dal
+Rico Dowdle,South Carolina,dal
+Chuma Edoga,USC,dal
+Ezekiel Elliott,Ohio St.,dal
+Princeton Fant,Tennessee,dal
+Jake Ferguson,Wisconsin,dal
+Ryan Flournoy,"Central Missouri St.,Iowa Western,SE Missouri St.",dal
+Chauncey Golston,Iowa,dal
+C.J. Goodwin,California (PA),dal
+Tyler Guyton,"TCU,Oklahoma",dal
+Kemon Hall,North Texas,dal
+Darius Harris,Middle Tenn. St.,dal
+K.J. Henry,Clemson,dal
+Brock Hoffman,"Coastal Carolina,Virginia Tech",dal
+Malik Hooker,Ohio St.,dal
+Buddy Johnson,Texas A&M,dal
+Linval Joseph,East Carolina,dal
+Eric Kendricks,UCLA,dal
+Marshawn Kneeland,Western Michigan,dal
+CeeDee Lamb,Oklahoma,dal
+Trey Lance,North Dakota St.,dal
+DeMarcus Lawrence,"Butler (KS),Boise St.",dal
+Carl Lawson,Auburn,dal
+Jourdan Lewis,Michigan,dal
+Marist Liufau,Notre Dame,dal
+Hunter Luepke,North Dakota St.,dal
+Zack Martin,Notre Dame,dal
+Jonathan Mingo,Mississippi,dal
+Jalen Moreno-Cropper,Fresno St.,dal
+Israel Mukuamu,South Carolina,dal
+Osa Odighizuwa,UCLA,dal
+Amani Oruwariye,Penn St.,dal
+DeMarvion Overshown,Texas,dal
+Micah Parsons,Penn St.,dal
+Jordan Phillips,Oklahoma,dal
+Dak Prescott,Mississippi St.,dal
+Troy Pride Jr.,Notre Dame,dal
+Asim Richards,North Carolina,dal
+Cooper Rush,Central Michigan,dal
+Luke Schoonmaker,Michigan,dal
+Dakoda Shepley,British Columbia,dal
+Trent Sieg,Colorado St.,dal
+Mazi Smith,Michigan,dal
+Tyler Smith,Tulsa,dal
+Brevyn Spann-Ford,Minnesota,dal
+Terence Steele,Texas Tech,dal
+Juanyeh Thomas,Georgia Tech,dal
+Jalen Tolbert,South Alabama,dal
+KaVontae Turpin,TCU,dal
+Deuce Vaughn,Kansas St.,dal
+Nick Vigil,Utah St.,dal
+Matt Waletzko,North Dakota,dal
+Carlos Watkins,Clemson,dal
+Tyrus Wheat,"Copiah-Lincoln CC,Mississippi St.",dal
+Donovan Wilson,Texas A&M,dal
+Matthew Adams,Houston,nyg
+Deonte Banks,Maryland,nyg
+Boogie Basham,Wake Forest,nyg
+Daniel Bellinger,San Diego St.,nyg
+Dane Belton,Iowa,nyg
+Curtis Bolton,Oklahoma,nyg
+Tim Boyle,"Connecticut,Eastern Kentucky",nyg
+Brian Burns,Florida St.,nyg
+Elijah Chatman,SMU,nyg
+Carter Coughlin,Minnesota,nyg
+D.J. Davidson,Arizona St.,nyg
+Tommy DeVito,"Syracuse,Illinois",nyg
+Greg Dulcich,UCLA,nyg
+Cory Durden,"Florida St.,North Carolina St.",nyg
+Jermaine Eluemunor,"Lackawanna,Texas A&M",nyg
+Joshua Ezeudu,North Carolina,nyg
+Cordale Flott,LSU,nyg
+Bryce Ford-Wheaton,West Virginia,nyg
+Tomon Fox,North Carolina,nyg
+Graham Gano,Florida St.,nyg
+Elijah Garcia,Rice,nyg
+Jamie Gillan,Ark-Pine Bluff,nyg
+Eric Gray,"Tennessee,Oklahoma",nyg
+Art Green,"Hutchinson (KS),Houston",nyg
+Matt Haack,Arizona St.,nyg
+Tre Hawkins,"Trinity Valley CC (TX),Old Dominion",nyg
+Isaiah Hodgins,Oregon St.,nyg
+Chris Hubbard,Ala-Birmingham,nyg
+Jalin Hyatt,Tennessee,nyg
+Adoree' Jackson,USC,nyg
+Anthony Johnson,Iowa St.,nyg
+Dyontae Johnson,Toledo,nyg
+Jakob Johnson,Tennessee,nyg
+Patrick Johnson,Tulane,nyg
+Theo Johnson,Penn St.,nyg
+Daniel Jones,Duke,nyg
+Greg Joseph,Florida Atlantic,nyg
+Casey Kreiter,Iowa,nyg
+Jake Kubas,North Dakota St.,nyg
+Dexter Lawrence,Clemson,nyg
+Raheem Layne,Indiana,nyg
+Drew Lock,Missouri,nyg
+Chris Manhertz,Canisius,nyg
+Jude McAtamney,"Chowan,Rutgers",nyg
+Nick McCloud,"North Carolina St.,Notre Dame",nyg
+Micah McFadden,Indiana,nyg
+Joshua Miles,Morgan St.,nyg
+Dante Miller,"Columbia,South Carolina",nyg
+Darius Muasau,"Hawaii,UCLA",nyg
+Malik Nabers,LSU,nyg
+Evan Neal,Alabama,nyg
+Tyler Nubin,Minnesota,nyg
+Rakeem Nunez-Roches,Southern Miss,nyg
+Azeez Ojulari,Georgia,nyg
+Bobby Okereke,Stanford,nyg
+Andru Phillips,Kentucky,nyg
+Tyre Phillips,"East Mississippi CC,Mississippi St.",nyg
+Jason Pinnock,Pittsburgh,nyg
+Jordon Riley,"North Carolina,Garden City (KS),Nebraska,Oregon",nyg
+Wan'Dale Robinson,"Nebraska,Kentucky",nyg
+Casey Rogers,"Nebraska,Oregon",nyg
+Jon Runyan Jr.,Michigan,nyg
+Austin Schlottmann,TCU,nyg
+John Michael Schmitz,Minnesota,nyg
+Duke Shelley,Kansas St.,nyg
+Isaiah Simmons,Clemson,nyg
+Devin Singletary,Florida Atlantic,nyg
+Darius Slayton,Auburn,nyg
+Ihmir Smith-Marsette,Iowa,nyg
+Aaron Stinnie,James Madison,nyg
+Greg Stroman,Virginia Tech,nyg
+Ty Summers,TCU,nyg
+Kayvon Thibodeaux,Oregon,nyg
+Andrew Thomas,Georgia,nyg
+Tyrone Tracy Jr.,"Iowa,Purdue",nyg
+Greg Van Roten,Pennsylvania,nyg
+Armon Watts,Arkansas,nyg
+Benton Whitley,Holy Cross,nyg
+Dee Williams,"East Central CC (MS),Tennessee",nyg
+Divaad Wilson,"Georgia,Central Florida",nyg
+Saquon Barkley,Penn St.,phi
+Zack Baun,Wisconsin,phi
+Mekhi Becton,Louisville,phi
+Reed Blankenship,Middle Tenn. St.,phi
+Khari Blasingame,Vanderbilt,phi
+Thomas Booker,Stanford,phi
+A.J. Brown,Mississippi,phi
+Sydney Brown,Illinois,phi
+Oren Burks,Vanderbilt,phi
+Grant Calcaterra,"Oklahoma,SMU",phi
+Parris Campbell,Ohio St.,phi
+Jalen Carter,Georgia,phi
+Britain Covey,Utah,phi
+Jordan Davis,Georgia,phi
+Tyrion Davis-Price,LSU,phi
+Nakobe Dean,Georgia,phi
+Cooper DeJean,Iowa,phi
+Landon Dickerson,"Florida St.,Alabama",phi
+Jahan Dotson,Penn St.,phi
+Jack Driscoll,"Massachusetts,Auburn",phi
+Jake Elliott,Memphis,phi
+Kenneth Gainwell,Memphis,phi
+Dallas Gant,Toledo,phi
+C.J. Gardner-Johnson,Florida,phi
+Nick Gates,Nebraska,phi
+Dallas Goedert,South Dakota St.,phi
+Brandon Graham,Michigan,phi
+Charles Harris,Missouri,phi
+Bryce Huff,Memphis,phi
+Jalyx Hunt,"Cornell,Houston Christian",phi
+Jalen Hurts,"Alabama,Oklahoma",phi
+E.J. Jenkins,"St. Francis (PA),South Carolina,Georgia Tech",phi
+Fred Johnson,Florida,phi
+Lane Johnson,"Kilgore College,Oklahoma",phi
+Patrick Johnson,Tulane,phi
+Cam Jurgens,Nebraska,phi
+Trevor Keegan,Michigan,phi
+Darian Kinnard,Kentucky,phi
+Rick Lovato,Old Dominion,phi
+Avonte Maddox,Pittsburgh,phi
+Jordan Mailata,None,phi
+Braden Mann,Texas A&M,phi
+Ochaun Mathis,"TCU,Nebraska",phi
+Tristin McCollum,Sam Houston St.,phi
+Tanner McKee,Stanford,phi
+Quinyon Mitchell,Toledo,phi
+Nicholas Morrow,Greenville,phi
+Moro Ojomo,Texas,phi
+Kenny Pickett,Pittsburgh,phi
+Eli Ricks,"LSU,Alabama",phi
+Kelee Ringo,Georgia,phi
+Isaiah Rodgers,Massachusetts,phi
+John Ross,Washington,phi
+Andre' Sam,"McNeese St.,Marshall,LSU",phi
+Will Shipley,Clemson,phi
+Darius Slay,Mississippi St.,phi
+Ainias Smith,Texas A&M,phi
+DeVonta Smith,Alabama,phi
+Nolan Smith,Georgia,phi
+Tyler Steen,"Vanderbilt,Alabama",phi
+Jack Stoll,Nebraska,phi
+Josh Sweat,Florida St.,phi
+Brett Toth,Army,phi
+Jeremiah Trotter Jr.,Clemson,phi
+C.J. Uzomah,Auburn,phi
+Ben VanSumeren,"Michigan,Michigan St.",phi
+Milton Williams,Louisiana Tech,phi
+Johnny Wilson,"Arizona St.,Florida St.",phi
+Nick Allegretti,Illinois,was
+Jonathan Allen,Alabama,was
+Dorance Armstrong Jr.,Kansas,was
+John Bates,Boise St.,was
+Nick Bellore,Central Michigan,was
+Tyler Biadasz,Wisconsin,was
+Dyami Brown,North Carolina,was
+Noah Brown,Ohio St.,was
+Percy Butler,Louisiana,was
+Jeremy Chinn,Southern Illinois,was
+Brandon Coleman,"Trinity Valley CC (TX),TCU",was
+Samuel Cosmi,Texas,was
+Jamison Crowder,Duke,was
+Jayden Daniels,"Arizona St.,LSU",was
+Carl Davis,Iowa,was
+Jamin Davis,Kentucky,was
+Michael Davis,BYU,was
+Sheldon Day,Notre Dame,was
+Michael Deiter,Wisconsin,was
+Jeff Driskel,"Florida,Louisiana Tech",was
+Austin Ekeler,Western St. (CO),was
+Zach Ertz,Stanford,was
+Clelin Ferrell,Clemson,was
+Emmanuel Forbes,Mississippi St.,was
+Darrick Forrest,Cincinnati,was
+Dante Fowler,Florida,was
+Zane Gonzalez,Arizona St.,was
+Dominique Hampton,Washington,was
+Jalyn Holmes,Ohio St.,was
+Noah Igbinoghene,Auburn,was
+Javontae Jean-Baptiste,"Ohio St.,Notre Dame",was
+Andre Jones,Louisiana,was
+Greg Joseph,Florida Atlantic,was
+Marshon Lattimore,Ohio St.,was
+Cornelius Lucas,Kansas St.,was
+Frankie Luvu,Washington St.,was
+Jordan Magee,Temple,was
+Marcus Mariota,Oregon,was
+Quan Martin,Illinois,was
+Phidarian Mathis,Alabama,was
+Luke McCaffrey,"Nebraska,Rice",was
+Terry McLaurin,Ohio St.,was
+Jeremy McNichols,Boise St.,was
+Chris Moore,Cincinnati,was
+Jer'Zhan Newton,Illinois,was
+Efe Obada,None,was
+K.J. Osborn,"Buffalo,Miami (FL)",was
+Tyler Ott,Harvard,was
+Tyler Owens,"Texas,Texas Tech",was
+Chris Paul,Tulsa,was
+Daron Payne,Alabama,was
+Bobby Price,Norfolk St.,was
+Jeremy Reaves,South Alabama,was
+Brian Robinson Jr.,Alabama,was
+Chris Rodriguez,Kentucky,was
+Mike Sainristil,Michigan,was
+Trenton Scott,Grambling St.,was
+Austin Seibert,Oklahoma,was
+Kevon Seymour,USC,was
+Ben Sinnott,Kansas St.,was
+Benjamin St-Juste,"Michigan,Minnesota",was
+Brycen Tremayne,Stanford,was
+Bobby Wagner,Utah St.,was
+Mykal Walker,"Azusa Pacific,Fresno St.",was
+Carlos Watkins,Clemson,was
+Tress Way,Oklahoma,was
+Andrew Wylie,Eastern Michigan,was
+Colson Yankoff,"Washington,UCLA",was
+Cade York,LSU,was
+Olamide Zaccheaus,Virginia,was
+Keenan Allen,California,chi
+Kiran Amegadjie,Yale,chi
+Tyson Bagent,Shepherd,chi
+Ryan Bates,Penn St.,chi
+Andrew Billings,Baylor,chi
+Josh Blackwell,Duke,chi
+Khari Blasingame,Vanderbilt,chi
+Austin Booker,"Minnesota,Kansas",chi
+Larry Borom,Missouri,chi
+Jaquan Brisker,"Lackawanna,Penn St.",chi
+Kevin Byard,Middle Tenn. St.,chi
+DeAndre Carter,Sacramento St.,chi
+Adrian Colbert,Miami (FL),chi
+Byron Cowart,Maryland,chi
+Jake Curhan,California,chi
+Scott Daly,Notre Dame,chi
+Nate Davis,Charlotte,chi
+Gervon Dexter,Florida,chi
+Tremaine Edmunds,Virginia Tech,chi
+T.J. Edwards,Wisconsin,chi
+Darrynton Evans,Appalachian St.,chi
+Gerald Everett,South Alabama,chi
+Jonathan Ford,Auburn,chi
+Chris Glaser,Virginia,chi
+Kyler Gordon,Washington,chi
+Daniel Hardy,Montana St.,chi
+Khalil Herbert,"Kansas,Virginia Tech",chi
+Elijah Hicks,California,chi
+Travis Homer,Miami (FL),chi
+Teven Jenkins,Oklahoma St.,chi
+Collin Johnson,Texas,chi
+Jaylon Johnson,Utah,chi
+Roschon Johnson,Texas,chi
+Braxton Jones,Southern Utah,chi
+Carl Jones,UCLA,chi
+Jaylon Jones,Mississippi,chi
+Velus Jones Jr.,"USC,Tennessee",chi
+Cole Kmet,Notre Dame,chi
+Doug Kramer,Illinois,chi
+Marcedes Lewis,UCLA,chi
+Jacob Martin,Temple,chi
+D.J. Moore,Maryland,chi
+Tarvarius Moore,Southern Miss,chi
+Bill Murray,William & Mary,chi
+Rome Odunze,Washington,chi
+Amen Ogbongbemiga,Oklahoma St.,chi
+Jonathan Owens,Missouri Western St.,chi
+Zacch Pickens,South Carolina,chi
+Matt Pryor,TCU,chi
+Dominique Robinson,Miami (OH),chi
+Jack Sanborn,Wisconsin,chi
+Cairo Santos,Tulane,chi
+Tyler Scott,Cincinnati,chi
+Noah Sewell,Oregon,chi
+Coleman Shelton,Washington,chi
+Terell Smith,Minnesota,chi
+Ameer Speed,"Georgia,Michigan St.",chi
+Tyrique Stevenson,"Georgia,Miami (FL)",chi
+Reddy Steward,Troy,chi
+Montez Sweat,"Michigan St.,Copiah-Lincoln CC,Mississippi St.",chi
+D'Andre Swift,Georgia,chi
+Darrell Taylor,Tennessee,chi
+Tory Taylor,Iowa,chi
+DeMarcus Walker,Florida St.,chi
+Caleb Williams,"Oklahoma,USC",chi
+Chris Williams,Wagner,chi
+Darnell Wright,Tennessee,chi
+Jamal Adams,LSU,det
+Myles Adams,Rice,det
+Mitchell Agude,"Riverside CC,UCLA,Miami (FL)",det
+Kwon Alexander,LSU,det
+Maurice Alexander,Florida International,det
+Alex Anzalone,Florida,det
+Terrion Arnold,Alabama,det
+Kayode Awosika,Buffalo,det
+Derrick Barnes,Purdue,det
+Jake Bates,"Texas St.,Arkansas",det
+Abraham Beauplan,"Navarro,Marshall",det
+Brian Branch,Alabama,det
+Teddy Bridgewater,Louisville,det
+Jack Campbell,Iowa,det
+Marcus Davenport,Texas-San Antonio,det
+Carlton Davis,Auburn,det
+Taylor Decker,Ohio St.,det
+Khalil Dorsey,Northern Arizona,det
+Jack Fox,Rice,det
+Jahmyr Gibbs,"Georgia Tech,Alabama",det
+Graham Glasgow,Michigan,det
+Jared Goff,California,det
+Hogan Hatten,Idaho,det
+Parker Hesse,Iowa,det
+Hendon Hooker,"Virginia Tech,Tennessee",det
+James Houston,"Florida,Jackson St.",det
+Aidan Hutchinson,Michigan,det
+Jermar Jefferson,Oregon St.,det
+Jamarco Jones,Ohio St.,det
+Brandon Joseph,"Northwestern,Notre Dame",det
+Kerby Joseph,Illinois,det
+Tom Kennedy,Bryant,det
+Sam LaPorta,Iowa,det
+David Long,West Virginia,det
+Christian Mahogany,Boston Col.,det
+Brodric Martin,"North Alabama,Western Kentucky",det
+Alim McNeill,North Carolina St.,det
+Ifeatu Melifonwu,Syracuse,det
+James Mitchell,Virginia Tech,det
+David Montgomery,Iowa St.,det
+Emmanuel Moseley,Tennessee,det
+Al-Quadin Muhammad,Miami (FL),det
+Ben Niemann,Iowa,det
+Michael Niese,"Dayton,Temple",det
+Morice Norris,Fresno St.,det
+Trevor Nowaske,Saginaw Valley St.,det
+Pat O'Connor,Eastern Michigan,det
+Levi Onwuzurike,Washington,det
+Josh Paschal,Kentucky,det
+Tim Patrick,Utah,det
+Kyle Peko,Oregon St.,det
+Anthony Pittman,Wayne State (MI),det
+Frank Ragnow,Arkansas,det
+Ennis Rakestraw,Missouri,det
+Kalif Raymond,Holy Cross,det
+D.J. Reader,Clemson,det
+Jalen Reeves-Maybin,Tennessee,det
+Craig Reynolds,Kutztown (PA),det
+Amik Robertson,Louisiana Tech,det
+Allen Robinson,Penn St.,det
+Malcolm Rodriguez,Oklahoma St.,det
+Penei Sewell,Oregon,det
+Dan Skipper,Arkansas,det
+Chris Smith,"Harvard,Notre Dame",det
+Za'Darius Smith,"East Mississippi CC,Kentucky",det
+Colby Sorsdal,William & Mary,det
+Amon-Ra St. Brown,USC,det
+Loren Strickland,"Indianapolis,Ball St.",det
+Isaiah Thomas,Oklahoma,det
+Stantley Thomas-Oliver,Florida International,det
+Zeke Turner,Washington,det
+Isaac Ukwu,"James Madison,Mississippi",det
+Sione Vaki,Utah,det
+Kindle Vildor,Georgia Southern,det
+Isaiah Williams,Illinois,det
+Jameson Williams,"Ohio St.,Alabama",det
+Jonah Williams,Weber St.,det
+Mekhi Wingo,"Missouri,LSU",det
+Brock Wright,Notre Dame,det
+Kevin Zeitler,Wisconsin,det
+Shane Zylstra,Minnesota St.,det
+Jaire Alexander,Louisville,gnb
+Zayne Anderson,BYU,gnb
+Corey Ballentine,Washburn,gnb
+Andrew Beck,Texas,gnb
+Chris Brooks,"California,BYU",gnb
+Karl Brooks,Bowling Green,gnb
+Omar Brown,"Northern Iowa,Nebraska",gnb
+Javon Bullard,Georgia,gnb
+Kenny Clark,UCLA,gnb
+Edgerrin Cooper,Texas A&M,gnb
+Brenton Cox,"Georgia,Florida",gnb
+Andre Dillard,Washington St.,gnb
+Romeo Doubs,Nevada,gnb
+Kingsley Enagbare,South Carolina,gnb
+John FitzPatrick,Georgia,gnb
+Rashan Gary,Michigan,gnb
+Travis Glover,Georgia St.,gnb
+Kamal Hadden,"Independence (KS),Tennessee",gnb
+Malik Heath,"Copiah-Lincoln CC,Mississippi St.,Mississippi",gnb
+Ty'Ron Hopper,"Florida,Missouri",gnb
+Josh Jacobs,Alabama,gnb
+Elgton Jenkins,Mississippi St.,gnb
+Tucker Kraft,South Dakota St.,gnb
+MarShawn Lloyd,"South Carolina,USC",gnb
+Jordan Love,Utah St.,gnb
+Isaiah McDuffie,Boston Col.,gnb
+Xavier McKinney,Alabama,gnb
+Brandon McManus,Temple,gnb
+Bo Melton,Rutgers,gnb
+Jacob Monk,Duke,gnb
+Jordan Morgan,Arizona,gnb
+Arron Mosby,Fresno St.,gnb
+Luke Musgrave,Oregon St.,gnb
+Josh Myers,Ohio St.,gnb
+Brayden Narveson,"Iowa St.,Western Kentucky,North Carolina St.",gnb
+Keisean Nixon,South Carolina,gnb
+Kitan Oladapo,Oregon St.,gnb
+Matthew Orzech,Azusa Pacific,gnb
+Jayden Reed,"Western Michigan,Michigan St.",gnb
+Sean Rhyan,UCLA,gnb
+Robert Rochell,Central Arkansas,gnb
+Ben Sims,Baylor,gnb
+Tedarrell Slaton,Florida,gnb
+Preston Smith,Mississippi St.,gnb
+Eric Stokes,Georgia,gnb
+Kadeem Telfort,"Florida,Garden City (KS),Ala-Birmingham",gnb
+Zach Tom,Wake Forest,gnb
+Carrington Valentine,Kentucky,gnb
+Lukas Van Ness,Iowa,gnb
+Quay Walker,Georgia,gnb
+Rasheed Walker,Penn St.,gnb
+Christian Watson,North Dakota St.,gnb
+Daniel Whelan,UC Davis,gnb
+Dontayvion Wicks,Virginia,gnb
+Evan Williams,"Fresno St.,Oregon",gnb
+Malik Willis,"Auburn,Liberty",gnb
+Emanuel Wilson,"Johnson C. Smith,Fort Valley St.",gnb
+Eric Wilson,Cincinnati,gnb
+Colby Wooden,Auburn,gnb
+Devonte Wyatt,"Hutchinson (KS),Georgia",gnb
+Jordan Addison,"Pittsburgh,USC",min
+Cam Akers,Florida St.,min
+Brian Asamoah,Oklahoma,min
+Garrett Bradbury,North Carolina St.,min
+Blake Brandel,Oregon St.,min
+Jonathan Bullard,Florida,min
+Camryn Bynum,California,min
+Blake Cashman,Minnesota,min
+Ty Chandler,"Tennessee,North Carolina",min
+Sam Darnold,USC,min
+Christian Darrisaw,Virginia Tech,min
+Jamin Davis,Kentucky,min
+Andrew DePaola,Rutgers,min
+Akayleb Evans,"Tulsa,Missouri",min
+Dan Feeney,Indiana,min
+Myles Gaskin,Washington,min
+Stephon Gilmore,South Carolina,min
+Jonathan Greenard,"Louisville,Florida",min
+Shaquill Griffin,Central Florida,min
+Kamu Grugier-Hill,Eastern Illinois,min
+C.J. Ham,Augustana (SD),min
+T.J. Hockenson,Iowa,min
+Ed Ingram,LSU,min
+Theo Jackson,Tennessee,min
+Trishton Jackson,"Michigan St.,Syracuse",min
+Justin Jefferson,LSU,min
+Aaron Jones,Texas-El Paso,min
+Patrick Jones II,Pittsburgh,min
+Michael Jurgens,Wake Forest,min
+Bobby McCain,Memphis,min
+Dwight McGlothern,"LSU,Arkansas",min
+Jake McQuaide,Ohio St.,min
+Josh Metellus,Michigan,min
+Fabian Moreau,UCLA,min
+Nick Mullens,Southern Miss,min
+Johnny Mundt,Oregon,min
+Byron Murphy,Washington,min
+Gabriel Murphy,"North Texas,UCLA",min
+Nick Muse,"William & Mary,South Carolina",min
+Jalen Nailor,Michigan St.,min
+Brian O'Neill,Pittsburgh,min
+Josh Oliver,San Jose St.,min
+Ivan Pace,"Miami (OH),Cincinnati",min
+Harrison Phillips,Stanford,min
+Brandon Powell,Florida,min
+David Quessenberry,San Jose St.,min
+Jalen Redmond,Oklahoma,min
+Will Reichard,Alabama,min
+Bo Richter,Air Force,min
+Dalton Risner,Kansas St.,min
+Cam Robinson,Alabama,min
+Levi Drake Rodriguez,"Southwestern Assemblies of God,Texas A&M-Commerce",min
+John Parker Romo,"Central Arkansas,Tulsa,Virginia Tech",min
+Walter Rouse,"Stanford,Oklahoma",min
+Trent Sherfield,Vanderbilt,min
+Harrison Smith,Notre Dame,min
+Taki Taimani,"Washington,Oregon",min
+Jerry Tillery,Notre Dame,min
+Robert Tonyan,Indiana St.,min
+Dallas Turner,Alabama,min
+Andrew Van Ginkel,Wisconsin,min
+Jay Ward,LSU,min
+Jihad Ward,Illinois,min
+Jonah Williams,Weber St.,min
+Nahshon Wright,"Laney,Oregon St.",min
+Ryan Wright,Tulane,min
+Micah Abernathy,Tennessee,atl
+DeAundre Alford,Tusculum,atl
+Tyler Allgeier,BYU,atl
+Troy Andersen,Montana St.,atl
+Jessie Bates III,Wake Forest,atl
+Matthew Bergeron,Syracuse,atl
+JD Bertrand,Notre Dame,atl
+Chris Blair,"Hinds CC,Alcorn St.",atl
+Natrone Brooks,"Copiah-Lincoln CC,Southern Miss",atl
+Lorenzo Carter,Georgia,atl
+Kirk Cousins,Michigan St.,atl
+Dane Cruikshank,Arizona,atl
+Drew Dalman,Stanford,atl
+Brandon Dorlus,Oregon,atl
+Ross Dwelley,San Diego,atl
+Arnold Ebiketie,"Temple,Penn St.",atl
+Kaden Elliss,Idaho,atl
+Rashaan Evans,Alabama,atl
+Eddie Goldman,Florida St.,atl
+Ta'Quon Graham,Texas,atl
+Richie Grant,Central Florida,atl
+Jovaughn Gwyn,South Carolina,atl
+Antonio Hamilton,South Carolina St.,atl
+Demone Harris,Buffalo,atl
+Zach Harrison,Ohio St.,atl
+Matt Hennessy,Temple,atl
+Kyle Hinton,Washburn,atl
+KhaDarel Hodge,"Alcorn St.,Hinds CC,Prairie View A&M",atl
+Mike Hughes,"North Carolina,Central Florida",atl
+Lamar Jackson,Nebraska,atl
+Grady Jarrett,Clemson,atl
+Matt Judon,Grand Valley St.,atl
+Khalid Kareem,Notre Dame,atl
+Kevin King,Washington,atl
+Younghoe Koo,Georgia Southern,atl
+Nathan Landman,Colorado,atl
+Chris Lindstrom,Boston Col.,atl
+Drake London,USC,atl
+DeAngelo Malone,Western Kentucky,atl
+Jake Matthews,Texas A&M,atl
+Jase McClellan,Alabama,atl
+Ray-Ray McCloud,Clemson,atl
+Liam McCullough,Ohio St.,atl
+Kaleb McGary,Washington,atl
+Darnell Mooney,Tulane,atl
+Ryan Neuzil,Appalachian St.,atl
+Storm Norton,Toledo,atl
+David Onyemata,Manitoba,atl
+Ruke Orhorhoro,Clemson,atl
+Riley Patterson,Memphis,atl
+Michael Penix,"Indiana,Washington",atl
+Clark Phillips,Utah,atl
+Bradley Pinion,Clemson,atl
+Kyle Pitts,Florida,atl
+Bijan Robinson,Texas,atl
+Justin Simmons,Boston Col.,atl
+James Smith-Williams,North Carolina St.,atl
+Kentavius Street,North Carolina St.,atl
+AJ Terrell,Clemson,atl
+Carlos Washington,"New Hampshire,Southeastern Louisiana",atl
+Casey Washington,Illinois,atl
+Elijah Wilkinson,Massachusetts,atl
+Avery Williams,Boise St.,atl
+Charlie Woerner,Georgia,atl
+Josh Woods,Maryland,atl
+Amare Barno,"Butler (KS),Virginia Tech",car
+Shemar Bartholomew,"Northwestern St. (LA),Georgia Southern",car
+Raheem Blackshear,"Rutgers,Virginia Tech",car
+Mike Boone,Cincinnati,car
+Jonathon Brooks,Texas,car
+Derrick Brown,Auburn,car
+Tariq Castro-Fields,Penn St.,car
+Claudin Cherelus,"Massachusetts,Alcorn St.",car
+Dan Chisena,Penn St.,car
+Brady Christensen,BYU,car
+Jadeveon Clowney,South Carolina,car
+Jalen Coker,Holy Cross,car
+Austin Corbett,Nevada,car
+Jaden Crumedy,Mississippi St.,car
+Andy Dalton,TCU,car
+Kenny Dyson,Bryant,car
+Ikem Ekwonu,North Carolina St.,car
+Akayleb Evans,"Tulsa,Missouri",car
+Caleb Farley,Virginia Tech,car
+Sam Franklin,Temple,car
+Feleipe Franks,"Florida,Arkansas",car
+Jordan Fuller,Ohio St.,car
+Cam Gill,Wagner,car
+Charles Harris,Missouri,car
+Jonathan Harris,Lindenwood,car
+Marquis Haynes,Mississippi,car
+Johnny Hekker,Oregon St.,car
+Troy Hill,Oregon,car
+Jaycee Horn,South Carolina,car
+Chuba Hubbard,Oklahoma St.,car
+Robert Hunt,Louisiana,car
+Thomas Incoom,"Valdosta St.,Central Michigan",car
+Dane Jackson,Pittsburgh,car
+Michael Jackson,Miami (FL),car
+Tarron Jackson,Coastal Carolina,car
+J.J. Jansen,Notre Dame,car
+Josey Jewell,Iowa,car
+Diontae Johnson,Toledo,car
+DJ Johnson,"Miami (FL),Oregon",car
+Lonnie Johnson Jr.,"Garden City (KS),Kentucky",car
+Velus Jones Jr.,"USC,Tennessee",car
+Jarrett Kingston,"Washington St.,USC",car
+Shaq Lawson,Clemson,car
+Xavier Legette,South Carolina,car
+Eku Leota,"Northwestern,Auburn",car
+Damien Lewis,LSU,car
+Jordan Matthews,Vanderbilt,car
+Cade Mays,"Georgia,Tennessee",car
+Jonathan Mingo,Mississippi,car
+David Moore,East Central (OK),car
+Taylor Moton,Western Michigan,car
+Yosh Nijman,Virginia Tech,car
+Jayden Peevy,Texas A&M,car
+Eddy Piñeiro,"ASA College (FL),Florida",car
+Shaquille Quarterman,Miami (FL),car
+LaBryan Ray,Alabama,car
+Andrew Raym,Oklahoma,car
+Jon Rhattigan,Army,car
+Demani Richardson,Texas A&M,car
+Sam Roberts,NW Missouri St.,car
+A'Shawn Robinson,Alabama,car
+Jammie Robinson,"South Carolina,Florida St.",car
+Ja'Tavion Sanders,Texas,car
+Miles Sanders,Penn St.,car
+Nick Scott,Penn St.,car
+Jamie Sheriff,"Mississippi Gulf Coast CC,South Alabama",car
+T.J. Smith,Arkansas,car
+Chau Smith-Wade,Washington St.,car
+Stephen Sullivan,LSU,car
+Adam Thielen,Minnesota St.,car
+Ian Thomas,Indiana,car
+Deven Thompkins,Utah St.,car
+Shaq Thompson,Washington,car
+Nick Thurman,Houston,car
+Tommy Tremble,Notre Dame,car
+Shy Tuttle,Tennessee,car
+Trevin Wallace,Kentucky,car
+Brandon Walton,Florida Atlantic,car
+DeShawn Williams,Clemson,car
+Jacoby Windmon,"UNLV,Michigan St.",car
+D.J. Wonnum,South Carolina,car
+Xavier Woods,Louisiana Tech,car
+Chandler Wooten,Auburn,car
+Russ Yeast,"Louisville,Kansas St.",car
+Bryce Young,Alabama,car
+Chandler Zavala,"Fairmont St.,North Carolina St.",car
+Johnathan Abram,Mississippi St.,nor
+Paulson Adebo,Stanford,nor
+Ugo Amadi,Oregon,nor
+Kevin Austin,Notre Dame,nor
+Khristian Boyd,Northern Iowa,nor
+Millard Bradford,TCU,nor
+Bryan Bresee,Clemson,nor
+Derek Carr,Fresno St.,nor
+Demario Davis,Arkansas St.,nor
+Clyde Edwards-Helaire,LSU,nor
+Jaylan Ford,Texas,nor
+Isaiah Foskey,Notre Dame,nor
+Taliese Fuaga,Oregon St.,nor
+Willie Gay Jr.,Mississippi St.,nor
+Carl Granderson,Wyoming,nor
+J.T. Gray,Mississippi St.,nor
+Blake Grupe,"Arkansas St.,Notre Dame",nor
+Jake Haener,"Washington,Fresno St.",nor
+Will Harris,Boston Col.,nor
+Matthew Hayball,"Florida Atlantic,Vanderbilt",nor
+Kyle Hergel,"North Dakota,Texas St.,Boston Col.",nor
+Tre Herndon,Vanderbilt,nor
+Taysom Hill,BYU,nor
+Dallin Holker,"BYU,Colorado St.",nor
+Jordan Howden,Minnesota,nor
+Khaleke Hudson,Michigan,nor
+D'Marco Jackson,Appalachian St.,nor
+Jermaine Jackson,"San Mateo,Idaho",nor
+Shemar Jean-Charles,Appalachian St.,nor
+Juwan Johnson,"Oregon,Penn St.",nor
+Cameron Jordan,California,nor
+Alvin Kamara,"Alabama,Hutchinson (KS),Tennessee",nor
+Tanoh Kpassagnon,Villanova,nor
+Marshon Lattimore,Ohio St.,nor
+Shane Lemieux,Oregon,nor
+Tyrann Mathieu,LSU,nor
+Erik McCoy,Texas A&M,nor
+Connor McGovern,Missouri,nor
+Kool-Aid McKinstry,Alabama,nor
+Bub Means,"Tennessee,Louisiana Tech,Pittsburgh",nor
+Kendre Miller,TCU,nor
+Jordan Mims,Fresno St.,nor
+Foster Moreau,LSU,nor
+Chris Olave,Ohio St.,nor
+Anfernee Orji,Vanderbilt,nor
+Lucas Patrick,Duke,nor
+Rico Payton,"Southern Illinois,Pittsburg St.",nor
+Trevor Penning,Northern Iowa,nor
+Dante Pettis,Washington,nor
+Adam Prentice,South Carolina,nor
+Spencer Rattler,"Oklahoma,South Carolina",nor
+Chris Reed,Minnesota St.,nor
+John Ridgeway,"Illinois St.,Arkansas",nor
+Cesar Ruiz,Michigan,nor
+Nick Saldiveri,Old Dominion,nor
+Khalen Saunders,Western Illinois,nor
+Nephi Sewell,"Nevada,Utah",nor
+Rashid Shaheed,Weber St.,nor
+Nathan Shepherd,Fort Hays St.,nor
+Equanimeous St. Brown,Notre Dame,nor
+Isaiah Stalbird,"Nebraska,South Dakota St.",nor
+Alontae Taylor,Tennessee,nor
+Roderic Teamer,Tulane,nor
+Mason Tipton,Yale,nor
+Payton Turner,Houston,nor
+Oli Udoh,Elon,nor
+Marquez Valdes-Scantling,"North Carolina St.,South Florida",nor
+Kendal Vickers,Tennessee,nor
+Pete Werner,Ohio St.,nor
+Jamaal Williams,BYU,nor
+Cedrick Wilson Jr.,Boise St.,nor
+Zach Wood,SMU,nor
+Chase Young,Ohio St.,nor
+Landon Young,Kentucky,nor
+Shaquil Barrett,"Nebraska-Omaha,Colorado St.",tam
+Graham Barton,Duke,tam
+Chris Braswell,Alabama,tam
+Ben Bredeson,Michigan,tam
+C.J. Brewer,Coastal Carolina,tam
+K.J. Britt,Auburn,tam
+Earnest Brown IV,Northwestern,tam
+Jack Browning,"Grossmont College (CA),San Diego St.",tam
+Marquez Callaway,Tennessee,tam
+Jake Camarda,Georgia,tam
+Devin Culp,Washington,tam
+Lavonte David,"Fort Scott (KS),Nebraska",tam
+Jamel Dean,Auburn,tam
+Evan Deckers,"Massachusetts,Duke",tam
+SirVocea Dennis,Pittsburgh,tam
+YaYa Diaby,"Georgia Military,Louisville",tam
+Payne Durham,Purdue,tam
+Mike Edwards,"Kentucky,Hawaii",tam
+Mike Evans,Texas A&M,tam
+Dallis Flowers,"Grand View,Pittsburg St.",tam
+Tyrek Funderburk,"Richmond,Appalachian St.",tam
+Greg Gaines,Washington,tam
+William Gholston,Michigan St.,tam
+Trenton Gill,North Carolina St.,tam
+Chris Godwin,Penn St.,tam
+Luke Goedeke,"Wisconsin–Stevens Point,Central Michigan",tam
+Mike Greene,James Madison,tam
+Antonio Grier,"South Florida,Arkansas",tam
+Robert Hainsey,Notre Dame,tam
+Bryce Hall,Virginia,tam
+Logan Hall,Houston,tam
+Josh Hayes,"North Dakota St.,Virginia,Kansas St.",tam
+Troy Hill,Oregon,tam
+Bucky Irving,"Minnesota,Oregon",tam
+Keenan Isaac,Alabama St.,tam
+Christian Izien,Rutgers,tam
+Rakim Jarrett,Maryland,tam
+Kameron Johnson,Barton,tam
+Deion Jones,LSU,tam
+Vi Jones,"USC,North Carolina St.",tam
+Calijah Kancey,Pittsburgh,tam
+Ko Kieft,Minnesota,tam
+Elijah Klein,Texas-El Paso,tam
+Cody Mauch,North Dakota St.,tam
+Baker Mayfield,Oklahoma,tam
+Zyon McCollum,Sam Houston St.,tam
+Chase McLaughlin,Illinois,tam
+Jalen McMillan,Washington,tam
+Kaevon Merriweather,Iowa,tam
+Ryan Miller,Furman,tam
+Ryan Neal,Southern Illinois,tam
+Anthony Nelson,Iowa,tam
+Royce Newman,Mississippi,tam
+Cade Otton,Washington,tam
+Trey Palmer,"LSU,Nebraska",tam
+Jose Ramirez,"Arizona,Riverside CC,Eastern Michigan",tam
+J.J. Russell,Memphis,tam
+Sterling Shepard,Oklahoma,tam
+Justin Skule,Vanderbilt,tam
+Tykee Smith,"West Virginia,Georgia",tam
+Ben Stille,Nebraska,tam
+Tavierre Thomas,Ferris St.,tam
+Cody Thompson,Toledo,tam
+Kyle Trask,Florida,tam
+Zach Triner,Assumption,tam
+Joe Tryon-Shoyinka,Washington,tam
+Sean Tucker,Syracuse,tam
+Vita Vea,Washington,tam
+Markees Watts,Charlotte,tam
+Rachaad White,"Nebraska-Kearney,Mount San Antonio JC,Arizona St.",tam
+Jordan Whitehead,Pittsburgh,tam
+D.J. Williams,"Auburn,Florida St.,Arizona",tam
+Antoine Winfield Jr.,Minnesota,tam
+Tristan Wirfs,Iowa,tam
+Isaiah Adams,"Wilfrid Laurier,Garden City (KS),Illinois",crd
+Markus Bailey,Purdue,crd
+Budda Baker,Washington,crd
+Krys Barnes,UCLA,crd
+Jackson Barton,Utah,crd
+Kelvin Beachum,SMU,crd
+Trey Benson,"Oregon,Florida St.",crd
+Angelo Blackson,Auburn,crd
+Joey Blount,Virginia,crd
+Aaron Brewer,San Diego St.,crd
+Evan Brown,SMU,crd
+Baron Browning,Ohio St.,crd
+Michael Carter,North Carolina,crd
+Andre Chachere,San Jose St.,crd
+Kei'Trel Clark,"Liberty,Louisville",crd
+L.J. Collier,TCU,crd
+Zaven Collins,Tulsa,crd
+Trystan Colon,Missouri,crd
+James Conner,Pittsburgh,crd
+DeeJay Dallas,Miami (FL),crd
+Emari Demercado,"Saddleback College,TCU",crd
+Victor Dimukeje,Duke,crd
+Greg Dortch,Wake Forest,crd
+Milo Eifler,"Washington,Illinois",crd
+Hjalte Froholdt,Arkansas,crd
+Jon Gaines,UCLA,crd
+Dennis Gardeck,Sioux Falls,crd
+Blake Gillikin,Penn St.,crd
+Darren Hall,San Diego St.,crd
+Marvin Harrison Jr.,Ohio St.,crd
+Charlie Heck,North Carolina,crd
+Will Hernandez,Texas-El Paso,crd
+Elijah Higgins,Stanford,crd
+Paris Johnson,Ohio St.,crd
+Christian Jones,Texas,crd
+Justin Jones,North Carolina St.,crd
+Naquan Jones,Michigan St.,crd
+Tony Jones,Notre Dame,crd
+Zay Jones,East Carolina,crd
+Nick Leverett,Rice,crd
+Roy Lopez,"New Mexico St.,Arizona",crd
+Jesse Luketa,Penn St.,crd
+Trey McBride,Colorado St.,crd
+Max Melton,Rutgers,crd
+Chris Moore,Cincinnati,crd
+Sean Murphy-Bunting,Central Michigan,crd
+Kyler Murray,"Texas A&M,Oklahoma",crd
+Bilal Nichols,Delaware,crd
+Julian Okwara,Notre Dame,crd
+Michael Palardy,Tennessee,crd
+Owen Pappoe,Auburn,crd
+Zach Pascal,Old Dominion,crd
+Matt Prater,Central Florida,crd
+Tip Reiman,Illinois,crd
+Darius Robinson,Missouri,crd
+Chad Ryland,"Eastern Michigan,Maryland",crd
+Ben Stille,Nebraska,crd
+Dante Stills,West Virginia,crd
+Dadrion Taylor-Demerson,Texas Tech,crd
+Starling Thomas,Ala-Birmingham,crd
+Xavier Thomas,Clemson,crd
+Jalen Thompson,Washington St.,crd
+Khyiris Tonga,BYU,crd
+Clayton Tune,Houston,crd
+Travis Vokolek,"Rutgers,Nebraska",crd
+Xavier Weaver,"South Florida,Colorado",crd
+Kyzir White,West Virginia,crd
+Garrett Williams,Syracuse,crd
+Jonah Williams,Alabama,crd
+Divaad Wilson,"Georgia,Central Florida",crd
+Mack Wilson,Alabama,crd
+Michael Wilson,Stanford,crd
+Davis Allen,Clemson,ram
+AJ Arcuri,Michigan St.,ram
+Tutu Atwell,Louisville,ram
+Steve Avila,TCU,ram
+Bobby Brown,Texas A&M,ram
+Logan Bruss,Wisconsin,ram
+Geron Christian,Louisville,ram
+Blake Corum,Michigan,ram
+Kamren Curl,Arkansas,ram
+Tyler Davis,Clemson,ram
+Justin Dedich,USC,ram
+Kevin Dotson,Louisiana,ram
+Cobie Durant,South Carolina St.,ram
+Ethan Evans,Wingate,ram
+Braden Fiske,"Western Michigan,Florida St.",ram
+Emmanuel Forbes,Mississippi St.,ram
+Neville Gallimore,Oklahoma,ram
+Jimmy Garoppolo,Eastern Illinois,ram
+Nick Hampton,Appalachian St.,ram
+Rob Havenstein,Wisconsin,ram
+Tyler Higbee,Western Kentucky,ram
+Michael Hoecht,Brown,ram
+Jake Hummel,Iowa St.,ram
+Alaric Jackson,Iowa,ram
+Brennan Jackson,Washington St.,ram
+Jonah Jackson,"Rutgers,Ohio St.",ram
+Desjuan Johnson,Toledo,ram
+John Johnson,Boston Col.,ram
+Tyler Johnson,Minnesota,ram
+Nikola Kalinic,York,ram
+Joshua Karty,Stanford,ram
+Kamren Kinchens,Miami (FL),ram
+Cooper Kupp,Eastern Washington,ram
+Quentin Lake,UCLA,ram
+Cam Lampkin,"Utah St.,Washington St.",ram
+Beaux Limmer,Arkansas,ram
+Hunter Long,Boston Col.,ram
+Warren McClendon,Georgia,ram
+Jaylen McCollough,Tennessee,ram
+Dylan McMahon,North Carolina St.,ram
+Puka Nacua,"Washington,BYU",ram
+Elias Neal,Marshall,ram
+Joseph Noteboom,TCU,ram
+Colby Parkinson,Stanford,ram
+Troy Reeder,"Penn St.,Delaware",ram
+Ronnie Rivers,Fresno St.,ram
+Demarcus Robinson,Florida,ram
+Christian Rozeboom,South Dakota St.,ram
+Cody Schrader,"Truman St.,Missouri",ram
+Xavier Smith,Florida A&M,ram
+Omar Speights,"Oregon St.,LSU",ram
+Matthew Stafford,Georgia,ram
+Keir Thomas,"South Carolina,Florida St.",ram
+Kobie Turner,"Richmond,Wake Forest",ram
+Jared Verse,"Albany (NY),Florida St.",ram
+Josh Wallace,"Massachusetts,Michigan",ram
+Alex Ward,Central Florida,ram
+Tre'Davious White,LSU,ram
+Jordan Whittington,Texas,ram
+Darious Williams,Ala-Birmingham,ram
+Jonah Williams,Weber St.,ram
+Kyren Williams,Notre Dame,ram
+Ahkello Witherspoon,Colorado,ram
+Charles Woods,"Illinois St.,West Virginia,SMU",ram
+Russ Yeast,"Louisville,Kansas St.",ram
+Byron Young,"Georgia Military,Tennessee",ram
+Ty Zentner,"Butler (KS),Kansas St.",ram
+Brandon Aiyuk,Arizona St.,sfo
+Brandon Allen,Arkansas,sfo
+Adrian Amos,Penn St.,sfo
+Evan Anderson,Florida Atlantic,sfo
+Aaron Banks,Notre Dame,sfo
+Alex Barrett,San Diego St.,sfo
+Ben Bartch,Saint John's (MN),sfo
+Robert Beal,Georgia,sfo
+Ronnie Bell,Michigan,sfo
+Tatum Bethune,"Central Florida,Florida St.",sfo
+Nick Bosa,Ohio St.,sfo
+Jake Brendel,UCLA,sfo
+Ji'Ayir Brown,"Lackawanna,Penn St.",sfo
+Spencer Burford,Texas-San Antonio,sfo
+De'Vondre Campbell,Minnesota,sfo
+Anders Carlson,Auburn,sfo
+Maliek Collins,Nebraska,sfo
+Chris Conley,Georgia,sfo
+Jacob Cowing,"Texas-El Paso,Arizona",sfo
+Kalia Davis,Central Florida,sfo
+Khalil Davis,Nebraska,sfo
+Joshua Dobbs,Tennessee,sfo
+Jordan Elliott,"Texas,Missouri",sfo
+Demetrius Flannigan-Fowles,Arizona,sfo
+Leonard Floyd,Georgia,sfo
+Tashaun Gipson,Wyoming,sfo
+Kevin Givens,Penn St.,sfo
+Jalen Graham,Purdue,sfo
+Renardo Green,Florida St.,sfo
+Dre Greenlaw,Arkansas,sfo
+Yetur Gross-Matos,Penn St.,sfo
+Isaac Guerendo,"Wisconsin,Louisville",sfo
+Sebastian Gutierrez,Minot St.,sfo
+Javon Hargrave,South Carolina St.,sfo
+Charlie Heck,North Carolina,sfo
+Matt Hennessy,Temple,sfo
+Talanoa Hufanga,USC,sfo
+Jauan Jennings,Tennessee,sfo
+Kyle Juszczyk,Harvard,sfo
+George Kittle,Iowa,sfo
+Deommodore Lenoir,Oregon,sfo
+Darrell Luter,"Pearl River CC,South Alabama",sfo
+Jaylen Mahoney,Vanderbilt,sfo
+Jordan Mason,Georgia Tech,sfo
+Christian McCaffrey,Stanford,sfo
+Nick McCloud,"North Carolina St.,Notre Dame",sfo
+T.Y. McGill,North Carolina St.,sfo
+Colton McKivitz,West Virginia,sfo
+Jake Moody,Michigan,sfo
+Jaylon Moore,Western Michigan,sfo
+Malik Mustapha,"Richmond,Wake Forest",sfo
+Pat O'Donnell,Miami (FL),sfo
+George Odum,Central Arkansas,sfo
+Sam Okuayinonu,Maryland,sfo
+Ricky Pearsall,"Arizona St.,Florida",sfo
+Taybor Pepper,Michigan St.,sfo
+Austen Pleasants,Ohio,sfo
+Dominick Puni,"Central Missouri St.,Kansas",sfo
+Brock Purdy,Iowa St.,sfo
+Curtis Robinson,Stanford,sfo
+Deebo Samuel,South Carolina,sfo
+Eric Saubert,Drake,sfo
+Patrick Taylor,Memphis,sfo
+Trent Taylor,Louisiana Tech,sfo
+Jake Tonges,California,sfo
+Ke'Shawn Vaughn,"Illinois,Vanderbilt",sfo
+Charvarius Ward,"Hinds CC,Middle Tenn. St.",sfo
+Fred Warner,BYU,sfo
+DaShaun White,Oklahoma,sfo
+Trent Williams,Oklahoma,sfo
+Brayden Willis,Oklahoma,sfo
+Dee Winters,TCU,sfo
+Mitch Wishnowsky,Utah,sfo
+Matthew Wright,Central Florida,sfo
+Rock Ya-Sin,Temple,sfo
+Isaac Yiadom,Boston Col.,sfo
+Nick Zakelj,Fordham,sfo
+Myles Adams,Rice,sea
+Jerome Baker,Ohio St.,sea
+AJ Barner,"Indiana,Michigan",sea
+Marquise Blair,Utah,sea
+Jake Bobo,"Duke,UCLA",sea
+Quinton Bohanna,Kentucky,sea
+Tyus Bowser,Houston,sea
+Anthony Bradford,LSU,sea
+Pharaoh Brown,Oregon,sea
+Tre Brown,Oklahoma,sea
+Coby Bryant,Cincinnati,sea
+Artie Burns,Miami (FL),sea
+Zach Charbonnet,"Michigan,UCLA",sea
+Charles Cross,Mississippi St.,sea
+McClendon Curtis,Chattanooga,sea
+Jaelon Darden,North Texas,sea
+Michael Dickson,Texas,sea
+Tyrel Dodson,Texas A&M,sea
+George Fant,Western Kentucky,sea
+Noah Fant,Iowa,sea
+AJ Finley,Mississippi,sea
+Stone Forsythe,Florida,sea
+Trevis Gipson,Tulsa,sea
+Derick Hall,Auburn,sea
+Johnathan Hankins,Ohio St.,sea
+Christian Haynes,Connecticut,sea
+Faion Hicks,Wisconsin,sea
+George Holani,Boise St.,sea
+Sam Howell,North Carolina,sea
+Rayshawn Jenkins,Miami (FL),sea
+Michael Jerrell,Findlay,sea
+Josh Jobe,Alabama,sea
+Dre'Mont Jones,Ohio St.,sea
+Ernest Jones,South Carolina,sea
+Tyrice Knight,"Independence (KS),Texas-El Paso",sea
+Sataoa Laumea,Utah,sea
+Tyler Lockett,Kansas St.,sea
+Julian Love,Notre Dame,sea
+Abraham Lucas,Washington St.,sea
+Tyler Mabry,"Buffalo,Maryland",sea
+Boye Mafe,Minnesota,sea
+Kenny McIntosh,Georgia,sea
+D.K. Metcalf,Mississippi,sea
+Mike Morris,Michigan,sea
+Byron Murphy,Texas,sea
+Jason Myers,Marist,sea
+Uchenna Nwosu,USC,sea
+Patrick O'Connell,"Univ. of Mary,Montana",sea
+Ty Okada,Montana St.,sea
+Olusegun Oluwatimi,"Air Force,Virginia,Michigan",sea
+Nehemiah Pritchett,Auburn,sea
+Jarran Reed,"East Mississippi CC,Alabama",sea
+Jerrick Reed,"Northwest Mississippi CC,New Mexico",sea
+Roy Robertson-Harris,Texas-El Paso,sea
+Josh Ross,Michigan,sea
+Brady Russell,Colorado,sea
+Laviska Shenault Jr.,Colorado,sea
+Jamie Sheriff,"Mississippi Gulf Coast CC,South Alabama",sea
+Geno Smith,West Virginia,sea
+Jaxon Smith-Njigba,Ohio St.,sea
+Chris Stoll,Penn St.,sea
+Jalen Sundell,North Dakota St.,sea
+Drake Thomas,North Carolina St.,sea
+Laken Tomlinson,Duke,sea
+Kenneth Walker III,"Wake Forest,Michigan St.",sea
+K'Von Wallace,Clemson,sea
+Cody White,Michigan St.,sea
+Connor Williams,Texas,sea
+Dee Williams,"East Central CC (MS),Tennessee",sea
+Leonard Williams,USC,sea
+Devon Witherspoon,Illinois,sea
+Riq Woolen,Texas-San Antonio,sea
+Cameron Young,Mississippi St.,sea
+Dareke Young,Lenoir-Rhyne,sea

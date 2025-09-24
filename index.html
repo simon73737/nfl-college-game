@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>NFL College Guessing Game</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; margin: 2rem; max-width: 720px; }
+    .player { margin-bottom: 1rem; padding: 0.5rem; border-bottom: 1px solid #eee; }
+    input { margin-right: 0.5rem; padding: 0.25rem 0.4rem; }
+    button { padding: 0.3rem 0.6rem; }
+    .correct { color: green; font-weight: bold; margin-left: 0.6rem; }
+    .wrong { color: red; font-weight: bold; margin-left: 0.6rem; }
+    #controls { margin-bottom: 1rem; }
+  </style>
+</head>
+<body>
+  <h1>NFL College Guessing Game</h1>
+
+  <div id="controls">
+    <button id="startBtn" onclick="startGame()">Get Players</button>
+    <button id="playAgainBtn" style="display:none" onclick="startGame()">Play Again</button>
+    <span id="score" style="margin-left:1rem"></span>
+  </div>
+
+  <div id="game">Loading players...</div>
+
+  <datalist id="collegesList"></datalist>
+
+  <script>
+    let players = [];
+    let currentPlayers = [];
+    let score = 0;
+    let allColleges = [];
+
+    // Normalize college/guess strings for fuzzy comparison
+    function normalize(str) {
+      return str
+        .toLowerCase()
+        .replace(/\./g, '')      // remove periods
+        .replace(/\bst\b/g, 'state')  // st -> state
+        .replace(/\btech\b/g, 'tech') // handle Tech
+        .replace(/\s+/g, ' ')    // collapse whitespace
+        .trim();
+    }
+
+    async function loadPlayers() {
+      try {
+        const response = await fetch('players.json');
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        players = await response.json();
+
+        // Build unique list of colleges from arrays
+        const set = new Set();
+        players.forEach(p => {
+          p.College.forEach(c => set.add(c));
+        });
+        allColleges = Array.from(set).sort();
+
+        // Populate datalist for autocomplete
+        const datalist = document.getElementById('collegesList');
+        datalist.innerHTML = ''; // Clear existing options
+        allColleges.forEach(c => {
+          const option = document.createElement('option');
+          option.value = c;
+          datalist.appendChild(option);
+        });
+
+        document.getElementById('game').innerHTML = 'Click "Get Players" to start the game!';
+        document.getElementById('startBtn').style.display = 'inline-block';
+      } catch (error) {
+        console.error('Error loading players:', error);
+        document.getElementById('game').innerHTML = 'Error loading players. Please check the console.';
+      }
+    }
+
+    function startGame() {
+      score = 0;
+      document.getElementById('score').textContent = "Score: 0/5";
+      const container = document.getElementById('game');
+      container.innerHTML = "";
+
+      // Shuffle players and take 5
+      currentPlayers = [...players].sort(() => 0.5 - Math.random()).slice(0, 5);
+
+      currentPlayers.forEach((p, idx) => {
+        const div = document.createElement('div');
+        div.className = "question";
+        div.innerHTML = `
+          <p><strong>${p.Player}</strong> (${p.Team.toUpperCase()})</p>
+          <input type="text" placeholder="Enter college..." list="collegesList"/>
+          <button class="submitBtn">Submit</button>
+          <span class="result"></span>
+        `;
+        container.appendChild(div);
+
+        const submitBtn = div.querySelector('.submitBtn');
+        const input = div.querySelector('input');
+        
+        submitBtn.addEventListener('click', () => checkAnswer(idx, div));
+        input.addEventListener('keypress', (e) => {
+          if (e.key === 'Enter') {
+            checkAnswer(idx, div);
+          }
+        });
+      });
+
+      document.getElementById('startBtn').style.display = 'none';
+      document.getElementById('playAgainBtn').style.display = 'inline-block';
+    }
+
+    function checkAnswer(idx, div) {
+      const player = currentPlayers[idx];
+      const input = div.querySelector('input');
+      const guess = normalize(input.value || '');
+      const colleges = player.College; // Already an array
+      const normalizedColleges = colleges.map(c => normalize(c));
+      const resultEl = div.querySelector('.result');
+
+      if (!guess) {
+        resultEl.textContent = 'Please enter a college.';
+        resultEl.className = 'result wrong';
+        return;
+      }
+
+      if (normalizedColleges.includes(guess)) {
+        resultEl.textContent = '✔ Correct!';
+        resultEl.className = 'result correct';
+        score++;
+      } else {
+        resultEl.textContent = '✘ Wrong — ' + colleges.join(', ');
+        resultEl.className = 'result wrong';
+      }
+
+      input.disabled = true;
+      div.querySelector('.submitBtn').disabled = true;
+
+      document.getElementById('score').textContent = `Score: ${score}/${currentPlayers.length}`;
+    }
+
+    // Load players when page loads
+    window.addEventListener('DOMContentLoaded', loadPlayers);
+  </script>
+</body>
+</html>
