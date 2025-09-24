@@ -6,12 +6,19 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <style>
     body { font-family: Arial, Helvetica, sans-serif; margin: 2rem; max-width: 720px; }
-    .player { margin-bottom: 1rem; padding: 0.5rem; border-bottom: 1px solid #eee; }
-    input { margin-right: 0.5rem; padding: 0.25rem 0.4rem; }
-    button { padding: 0.3rem 0.6rem; }
-    .correct { color: green; font-weight: bold; margin-left: 0.6rem; }
-    .wrong { color: red; font-weight: bold; margin-left: 0.6rem; }
+    .question { margin-bottom: 1.5rem; padding: 1rem; border: 1px solid #ddd; border-radius: 8px; background-color: #f9f9f9; }
+    .player-info { margin-bottom: 0.75rem; }
+    .input-row { margin-bottom: 0.5rem; }
+    input { margin-right: 0.5rem; padding: 0.25rem 0.4rem; min-width: 200px; }
+    button { padding: 0.3rem 0.6rem; margin-right: 0.5rem; }
+    .reveal-btn { background-color: #ff9800; color: white; border: none; cursor: pointer; }
+    .reveal-btn:hover { background-color: #e68900; }
+    .reveal-btn:disabled { background-color: #ccc; cursor: not-allowed; }
+    .correct { color: green; font-weight: bold; }
+    .wrong { color: red; font-weight: bold; }
+    .revealed { color: #ff9800; font-weight: bold; }
     #controls { margin-bottom: 1rem; }
+    .result { margin-top: 0.5rem; }
   </style>
 </head>
 <body>
@@ -89,10 +96,15 @@
         const div = document.createElement('div');
         div.className = "question";
         div.innerHTML = `
-          <p><strong>${p.Player}</strong> (${p.Team.toUpperCase()})</p>
-          <input type="text" placeholder="Enter college..." list="collegesList"/>
-          <button class="submitBtn">Submit</button>
-          <span class="result"></span>
+          <div class="player-info">
+            <strong>${p.Player}</strong> (${p.Team})
+          </div>
+          <div class="input-row">
+            <input type="text" placeholder="Enter college..." list="collegesList"/>
+            <button class="submitBtn">Submit</button>
+            <button class="reveal-btn" onclick="revealAnswer(${idx}, this.parentElement.parentElement)">Reveal Answer</button>
+          </div>
+          <div class="result"></div>
         `;
         container.appendChild(div);
 
@@ -134,9 +146,28 @@
         resultEl.className = 'result wrong';
       }
 
+      // Disable controls after answer
       input.disabled = true;
       div.querySelector('.submitBtn').disabled = true;
+      div.querySelector('.reveal-btn').disabled = true;
 
+      document.getElementById('score').textContent = `Score: ${score}/${currentPlayers.length}`;
+    }
+
+    function revealAnswer(idx, div) {
+      const player = currentPlayers[idx];
+      const colleges = player.College;
+      const resultEl = div.querySelector('.result');
+      
+      resultEl.textContent = '👁️ Answer: ' + colleges.join(', ');
+      resultEl.className = 'result revealed';
+
+      // Disable controls after reveal
+      div.querySelector('input').disabled = true;
+      div.querySelector('.submitBtn').disabled = true;
+      div.querySelector('.reveal-btn').disabled = true;
+
+      // Don't increment score for revealed answers
       document.getElementById('score').textContent = `Score: ${score}/${currentPlayers.length}`;
     }
 
