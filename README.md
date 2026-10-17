@@ -22,17 +22,18 @@ Name the college each NFL player went to. Live at https://simon73737.github.io/n
 
 ## How difficulty works
 
-Every active player gets a fame score built from:
+Every active player gets a score for how easy his college is to guess, built from:
 
 - Sleeper's search rank (how often people look a player up, mostly driven by fantasy football)
+- Career production since 2014 (fantasy points for offense, sacks/INTs/big plays for defense), so long-time stars like Kelce stay easy
 - Draft pick (counts most for young players)
 - Current contract as a share of the salary cap (catches star linemen and defenders that fantasy ignores)
 - Games started last season
-- Pro Bowls / All-Pros / awards (from the 2024 scrape, so lighter weight)
-- Position (QBs are easier to place; kickers, punters and long snappers much harder)
+- Position: QBs, receivers and backs are much easier for casual fans; defenders and linemen need to be elite to rank high; kickers, punters and long snappers rank lowest
+- College: stars from big programs (Alabama, Ohio State…) get a boost over equally famous players from small schools
 - Your own 1–4 ratings from the old tool, which override the formula when they disagree
 
-Players are ranked by that score: the top 175 are **Easy**, the next 300 **Medium**, the next 525 **Hard**, and everyone else **Expert**. Rounds mix tiers (see `DIFFICULTIES` in `js/game.js`).
+Players are ranked by that score: the top 120 are **Easy**, the next 250 **Medium**, the next 400 **Hard**, and everyone else **Expert**. Rounds mix tiers (see `DIFFICULTIES` in `js/game.js`). In multiple choice, Easy players never get a wrong answer from their own conference.
 
 ## Updating rosters
 

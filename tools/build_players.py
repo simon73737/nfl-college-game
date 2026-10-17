@@ -3,10 +3,10 @@ Build data/players.json for the game.
 
 Sources
   - Sleeper public API: current rosters for all 32 teams, college, popularity rank
-  - nflverse: draft pick, current contract (from OverTheCap) and last season's
-    snap counts for every player
-  - legacy/database/nfl_players_2024.json: Pro Bowls / All-Pros / awards and every
-    college a player attended, scraped from Pro-Football-Reference in 2024
+  - nflverse: draft pick, current contract (from OverTheCap), last season's snap
+    counts and career stats since 2014 for every player
+  - legacy/database/nfl_players_2024.json: extra transfer colleges, scraped from
+    Pro-Football-Reference in 2024 (19 teams only, so not used for difficulty)
   - tools/my_ratings.json: hand ratings 1-4 from the old ranking tool
 
 Every player gets a "fame" score. The game picks players by fame rank, so
@@ -45,10 +45,12 @@ DOWNLOADS = {
     "nflverse_players.csv": f"{NFLVERSE}/players/players.csv",
     "nflverse_contracts.parquet": f"{NFLVERSE}/contracts/historical_contracts.parquet",
     "nflverse_snaps.csv.gz": f"{NFLVERSE}/snap_counts/snap_counts_{SNAP_SEASON}.csv.gz",
+    **{f"stats_{y}.csv.gz": f"{NFLVERSE}/stats_player/stats_player_regpost_{y}.csv.gz"
+       for y in range(SNAP_SEASON - 11, SNAP_SEASON + 1)},
 }
 
 # Fame rank cutoffs for each tier (1 = Easy ... 4 = Expert)
-TIER_CUTOFFS = [175, 475, 1000]
+TIER_CUTOFFS = [120, 370, 770]
 
 # ---------------------------------------------------------------------------
 # College names
@@ -254,11 +256,12 @@ POSITION_GROUP = {
 # ---------------------------------------------------------------------------
 NO_RANK = 9_999_999
 
-POSITION_ADJ = {"QB": 10, "WR": 3, "RB": 3, "TE": 0, "OL": -4, "DL": 0, "LB": 0, "DB": -2,
-                "K": -20, "P": -25, "LS": -35}
+# Casual fans know the ball carriers; defenders and linemen need to be truly elite
+POSITION_ADJ = {"QB": 14, "WR": 7, "RB": 7, "TE": 3, "OL": -12, "DL": -10, "LB": -10, "DB": -12,
+                "K": -25, "P": -30, "LS": -40}
 
 
-def fame_score(p, group, nv, cap_pct, starts, legacy):
+def fame_score(p, group, nv, cap_pct, starts, career):
     """Higher = more recognizable. Only the ordering matters (tiers use fame rank)."""
     exp = p.get("years_exp") or 0
     rank = p.get("search_rank")
@@ -285,16 +288,30 @@ def fame_score(p, group, nv, cap_pct, starts, legacy):
     # Starter last season (50%+ of snaps): up to 10
     score += min(starts, 17) / 17 * 10
 
-    # Accolades from the 2024 scrape (only 19 teams were scraped, so kept light)
-    if legacy:
-        score += 3 * min(legacy["pro_bowls"], 6)
-        score += 4 * min(legacy["all_pros"], 3)
-        score += 2 * min(len(legacy["awards"]), 3)
+    # Career production since 2014: long, productive careers make names stick
+    # (Kelce, Kittle, Garrett) even when current fantasy interest has faded.
+    # Offense: PPR fantasy points, ~2500 = max. Defense: big plays, ~350 = max.
+    ppr, defense = career
+    if group in ("QB", "RB", "WR", "TE"):
+        score += 24 * min(1.0, max(0.0, ppr) / 2500) ** 0.6
+    elif group in ("DL", "LB", "DB"):
+        score += 24 * min(1.0, max(0.0, defense) / 350) ** 0.6
 
     # A few seasons in the league makes a name stick
     score += min(exp, 8) * 0.8
 
     return score + POSITION_ADJ[group]
+
+
+def add_college_bonus(players):
+    """Big football schools are easier to guess: a star from Alabama is easier than
+    an equally famous player from Fresno State. Up to +8 for the biggest programs."""
+    counts = {}
+    for p in players:
+        counts[p["college"]] = counts.get(p["college"], 0) + 1
+    for p in players:
+        power = conference(p["college"]) not in ("Group of 5", "FCS / small school")
+        p["fame"] += (8 if power else 3) * min(1.0, counts[p["college"]] / 45)
 
 
 def apply_ratings(players):
@@ -363,6 +380,21 @@ def load_nflverse():
     return by_gsis, by_espn, by_name, cap_pct, starts
 
 
+def load_career():
+    """Career totals by gsis id: (PPR fantasy points, defensive big-play points)."""
+    career = {}
+    for y in range(SNAP_SEASON - 11, SNAP_SEASON + 1):
+        with gzip.open(CACHE_DIR / f"stats_{y}.csv.gz", "rt", encoding="utf-8") as f:
+            for r in csv.DictReader(f):
+                f_ = lambda k: float(r[k] or 0) if r[k] not in ("NA", "") else 0.0
+                ppr = f_("fantasy_points_ppr")
+                big_plays = (4 * f_("def_sacks") + 5 * f_("def_interceptions") + 3 * f_("def_fumbles_forced")
+                             + f_("def_tackles_for_loss") + f_("def_pass_defended") + 0.1 * f_("def_tackles_solo"))
+                old = career.get(r["player_id"], (0.0, 0.0))
+                career[r["player_id"]] = (old[0] + ppr, old[1] + big_plays)
+    return career
+
+
 def match_nflverse(p, college, by_gsis, by_espn, by_name):
     r = by_gsis.get((p.get("gsis_id") or "").strip()) or by_espn.get(str(p.get("espn_id") or ""))
     if r:
@@ -379,6 +411,7 @@ def main():
     fetch(cached)
     sleeper = json.loads((CACHE_DIR / "sleeper_players.json").read_text(encoding="utf-8"))
     by_gsis, by_espn, by_nv_name, cap_pct, starts = load_nflverse()
+    career = load_career()
 
     # Legacy PFR records indexed by name; matched only when colleges agree, so two
     # different players with the same name (e.g. the two Lamar Jacksons) don't mix.
@@ -448,10 +481,11 @@ def main():
             "fame": fame_score(p, group, nv,
                                cap_pct.get(nv["gsis_id"]) if nv else None,
                                starts.get(nv["pfr_id"], 0) if nv else 0,
-                               legacy),
+                               career.get(nv["gsis_id"], (0.0, 0.0)) if nv else (0.0, 0.0)),
             "_rating": rating,
         })
 
+    add_college_bonus(players)
     apply_ratings(players)
     for pl in players:
         pl["fame"] = round(pl["fame"], 1)

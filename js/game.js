@@ -222,16 +222,20 @@ export function suggest(query, colleges, popularity, limit = 6) {
 // Multiple choice
 // ---------------------------------------------------------------------------
 
-// Three believable wrong answers: one from the same conference (when it's a named
-// conference) and the rest from schools that produce lots of NFL players.
+// Three believable wrong answers from schools that produce lots of NFL players.
+// For harder players one comes from the same conference (Ohio State vs Michigan);
+// for the most famous (tier 1) the wrong answers avoid the conference entirely so
+// Easy stays easy.
 export function buildChoices(player, colleges, popularity, rand = Math.random) {
   const answer = player.college;
   const conf = colleges[answer]?.conf;
   const wrong = new Set();
-  const notAnswer = c => !player.colleges.includes(c) && !wrong.has(c);
+  const easy = player.tier === 1;
+  const notAnswer = c => !player.colleges.includes(c) && !wrong.has(c) &&
+    !(easy && conf && colleges[c]?.conf === conf);
 
   const named = conf && !['Group of 5', 'FCS / small school', 'Independent'].includes(conf);
-  if (named) {
+  if (named && !easy) {
     const sameConf = Object.keys(colleges).filter(c => colleges[c].conf === conf && notAnswer(c));
     const pick = shuffle(sameConf, rand)[0];
     if (pick) wrong.add(pick);

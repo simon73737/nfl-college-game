@@ -73,6 +73,15 @@ test('multiple choice has 4 distinct options including the answer', () => {
   }
 });
 
+test('easy players never get a same-conference wrong answer', () => {
+  const rand = seededRandom('easy-choices');
+  for (const p of data.players.filter(p => p.tier === 1)) {
+    const conf = data.colleges[p.college].conf;
+    const wrong = buildChoices(p, data.colleges, popularity, rand).filter(c => c !== p.college);
+    assert.ok(wrong.every(c => data.colleges[c].conf !== conf), p.name);
+  }
+});
+
 test('rounds have the right size, tiers and no repeated colleges', () => {
   for (const diff of Object.keys(DIFFICULTIES)) {
     for (let k = 0; k < 20; k++) {
