@@ -193,6 +193,11 @@ main { flex: 1; outline: none; }
 }
 .player-team { font-weight: 600; font-size: .95rem; }
 .player-num { font: 800 2rem/1 var(--display); opacity: .9; }
+.player-tag {
+  font: 800 .95rem/1 var(--display); text-transform: uppercase; letter-spacing: .08em;
+  background: var(--team-alt); color: var(--team);
+  padding: 6px 10px; border-radius: 6px;
+}
 .player-body { padding: 18px 20px 20px; }
 .player-name { font: 800 2.4rem/1 var(--display); text-transform: uppercase; margin: 0 0 12px; overflow-wrap: anywhere; }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; }

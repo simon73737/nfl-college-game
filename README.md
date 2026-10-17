@@ -2,8 +2,8 @@
 
 Name the college each NFL player went to. Live at https://simon73737.github.io/nfl-college-game/
 
-- **Daily Challenge**: the same 10 players for everyone each day, easiest to hardest, with a shareable result.
-- **Practice**: Easy / Medium / Hard / Expert, multiple choice or typed answers.
+- **Daily Challenge**: the same 10 players for everyone each day, easiest to hardest, ending with a throwback Legend, plus a shareable result.
+- **Practice**: current players or **Legends** (anyone who played in 2010 or later and isn't on a roster now), Easy / Medium / Hard / Expert, multiple choice or typed answers.
 - **Hints**: the conference first, then the school's letter pattern (or two wrong choices removed). Each hint costs a point.
 - Any school a player attended counts (Bo Nix: Oregon *or* Auburn). Typed answers accept nicknames (Ole Miss, USC, Pitt, UCF…) and small typos.
 
@@ -34,6 +34,10 @@ Every active player gets a score for how easy his college is to guess, built fro
 - Your own 1–4 ratings from the old tool, which override the formula when they disagree
 
 Players are ranked by that score: the top 120 are **Easy**, the next 250 **Medium**, the next 400 **Hard**, and everyone else **Expert**. Rounds mix tiers (see `DIFFICULTIES` in `js/game.js`). In multiple choice, Easy players never get a wrong answer from their own conference.
+
+### Legends
+
+Retired players (and free agents) who played in 2010 or later. Their score uses Hall of Fame, All-Pro and Pro Bowl selections, career approximate value and career production since 1999, with the same position and college adjustments. Honors count less for linemen and defenders, since diehards know those players but casual fans often don't. The top 100 are Easy, the next 200 Medium, the next 400 Hard/Expert; the rest are left out. Each Legend is shown with the team he played the most games for, using the city from the middle of his career (San Diego Chargers, St. Louis Rams, Oakland Raiders). Change `LEGEND_SINCE` in `tools/build_players.py` to reach further back (stats start in 1999, Pro Bowl data in 1980).
 
 ## Updating rosters
 

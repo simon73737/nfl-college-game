@@ -107,12 +107,34 @@ test('recently seen players are avoided', () => {
 });
 
 test('daily challenge is the same all day and changes the next day', () => {
-  const a = pickDaily(data.players, new Date(2026, 9, 17, 8)).map(p => p.id);
-  const b = pickDaily(data.players, new Date(2026, 9, 17, 22)).map(p => p.id);
-  const c = pickDaily(data.players, new Date(2026, 9, 18, 8)).map(p => p.id);
-  assert.deepEqual(a, b);
-  assert.notDeepEqual(a, c);
+  const day = (d, h) => pickDaily(data.players, data.legends, new Date(2026, 9, d, h));
+  const a = day(17, 8);
+  assert.deepEqual(a.map(p => p.id), day(17, 22).map(p => p.id));
+  assert.notDeepEqual(a.map(p => p.id), day(18, 8).map(p => p.id));
   assert.equal(a.length, 10);
+  assert.equal(new Set(a.map(p => p.college)).size, 10);
+  // 9 current players, then the throwback legend last
+  assert.ok(a.slice(0, 9).every(p => !p.legend));
+  assert.ok(a[9].legend && a[9].tier === 1);
+  assert.ok(['QB', 'RB', 'WR', 'TE'].includes(a[9].group));
+});
+
+test('legends: 2010s onward, nobody on a current roster, sane fields', () => {
+  const current = new Set(data.players.map(p => p.name + p.college));
+  assert.ok(data.legends.length >= 500);
+  for (const p of data.legends) {
+    assert.ok(p.years[1] >= 2010, p.name);
+    assert.ok(p.colleges.includes(p.college), p.name);
+    assert.ok(!current.has(p.name + p.college), `${p.name} is on a roster`);
+  }
+  const legend = name => data.legends.find(p => p.name === name);
+  assert.equal(legend('Calvin Johnson')?.college, 'Georgia Tech');
+  assert.equal(legend('Peyton Manning')?.tier, 1);
+  assert.ok(legend('Calvin Johnson').hof);
+  for (const diff of Object.keys(DIFFICULTIES)) {
+    const round = pickRound(data.legends, diff, { rand: seededRandom('legend' + diff) });
+    assert.equal(round.length, ROUND_SIZE, diff);
+  }
 });
 
 test('hints and points', () => {

@@ -12,8 +12,10 @@ export const DIFFICULTIES = {
   expert: { label: 'Expert', blurb: 'Deep cuts. Good luck.',             mix: { 3: 0.3, 4: 0.7 } },
 };
 
-// Daily challenge: same 10 players for everyone, easiest first
-const DAILY_MIX = { 1: 4, 2: 4, 3: 2 };
+// Daily challenge: same 10 players for everyone, easiest first, then one
+// throwback bonus from the Legends pool
+const DAILY_MIX = { 1: 4, 2: 3, 3: 2 };
+const DAILY_LEGEND_TIER = 1;
 const DAILY_EPOCH = Date.UTC(2026, 9, 16); // puzzle #1
 
 // ---------------------------------------------------------------------------
@@ -110,15 +112,20 @@ export function dailyKey(date = new Date()) {
   return `${date.getFullYear()}-${m}-${d}`;
 }
 
-export function pickDaily(players, date = new Date()) {
+export function pickDaily(players, legends = [], date = new Date()) {
   const rand = seededRandom(`daily-${dailyKey(date)}`);
   const taken = { ids: new Set(), colleges: new Set(), specialists: 1 }; // no specialists
+  const byId = (a, b) => a.id.localeCompare(b.id); // stable order so the seed decides
   const round = [];
   for (const [tier, n] of Object.entries(DAILY_MIX)) {
-    const pool = players.filter(p => p.tier === Number(tier)).sort((a, b) => a.id.localeCompare(b.id));
-    round.push(...draw(pool, n, rand, taken));
+    round.push(...draw(players.filter(p => p.tier === Number(tier)).sort(byId), n, rand, taken));
   }
-  return round.sort((a, b) => b.fame - a.fame);
+  round.sort((a, b) => b.fame - a.fame);
+  // the bonus should be fun, so stick to famous skill players
+  const skill = new Set(['QB', 'RB', 'WR', 'TE']);
+  const pool = legends.filter(p => p.tier === DAILY_LEGEND_TIER && skill.has(p.group)).sort(byId);
+  const throwback = draw(pool, 1, rand, taken);
+  return [...round, ...throwback];
 }
 
 // ---------------------------------------------------------------------------

@@ -4,12 +4,13 @@ Build data/players.json for the game.
 Sources
   - Sleeper public API: current rosters for all 32 teams, college, popularity rank
   - nflverse: draft pick, current contract (from OverTheCap), last season's snap
-    counts and career stats since 2014 for every player
+    counts, career stats since 1999, and Pro Bowls / All-Pros / Hall of Fame
   - legacy/database/nfl_players_2024.json: extra transfer colleges, scraped from
     Pro-Football-Reference in 2024 (19 teams only, so not used for difficulty)
   - tools/my_ratings.json: hand ratings 1-4 from the old ranking tool
 
-Every player gets a "fame" score. The game picks players by fame rank, so
+Two pools: current players (on a roster today) and Legends (played in 2010 or
+later but not on a roster now). Every player gets a "fame" score. The game picks players by fame rank, so
 "Easy" really means the most recognizable players in the league.
 
 Usage:  python tools/build_players.py            (downloads fresh data)
@@ -38,6 +39,7 @@ OUT = ROOT / "data" / "players.json"
 # Last completed season, used for "how often did he start" (rebuilds after a season
 # ends should bump this)
 SNAP_SEASON = 2025
+STATS_SINCE = 1999  # first season nflverse has stats for
 
 NFLVERSE = "https://github.com/nflverse/nflverse-data/releases/download"
 DOWNLOADS = {
@@ -45,12 +47,18 @@ DOWNLOADS = {
     "nflverse_players.csv": f"{NFLVERSE}/players/players.csv",
     "nflverse_contracts.parquet": f"{NFLVERSE}/contracts/historical_contracts.parquet",
     "nflverse_snaps.csv.gz": f"{NFLVERSE}/snap_counts/snap_counts_{SNAP_SEASON}.csv.gz",
+    "nflverse_draft_picks.csv": f"{NFLVERSE}/draft_picks/draft_picks.csv",
     **{f"stats_{y}.csv.gz": f"{NFLVERSE}/stats_player/stats_player_regpost_{y}.csv.gz"
-       for y in range(SNAP_SEASON - 11, SNAP_SEASON + 1)},
+       for y in range(STATS_SINCE, SNAP_SEASON + 1)},
 }
 
 # Fame rank cutoffs for each tier (1 = Easy ... 4 = Expert)
 TIER_CUTOFFS = [120, 370, 770]
+
+# Legends: anyone who played in LEGEND_SINCE or later and isn't on a roster now.
+# Only the top LEGEND_CUTOFFS[-1] are kept; past that nobody remembers them.
+LEGEND_SINCE = 2010
+LEGEND_CUTOFFS = [100, 300, 700]
 
 # ---------------------------------------------------------------------------
 # College names
@@ -247,7 +255,7 @@ POSITION_GROUP = {
     "OL": "OL", "OT": "OL", "T": "OL", "G": "OL", "OG": "OL", "C": "OL",
     "DL": "DL", "DE": "DL", "DT": "DL", "NT": "DL",
     "LB": "LB", "ILB": "LB", "OLB": "LB", "MLB": "LB",
-    "DB": "DB", "CB": "DB", "S": "DB", "SS": "DB", "FS": "DB",
+    "DB": "DB", "CB": "DB", "S": "DB", "SS": "DB", "FS": "DB", "SAF": "DB",
     "K": "K", "P": "P", "LS": "LS",
 }
 
@@ -312,6 +320,25 @@ def add_college_bonus(players):
     for p in players:
         power = conference(p["college"]) not in ("Group of 5", "FCS / small school")
         p["fame"] += (8 if power else 3) * min(1.0, counts[p["college"]] / 45)
+
+
+def legend_fame(group, honors, seasons):
+    """Like fame_score but for finished careers: honors and career production."""
+    score = 0.0
+    if honors:
+        # Honors make linemen and defenders famous among diehards, not casual fans
+        weight = 1.0 if group in ("QB", "RB", "WR", "TE") else 0.55
+        score += weight * (30 if honors["hof"] else 0)
+        score += weight * 5 * min(honors["ap"], 5)
+        score += weight * 3 * min(honors["pb"], 10)
+        score += 15 * min(1.0, honors["av"] / 100) ** 0.7  # career approximate value
+        if honors["round"] == 1:
+            score += 4
+    if group in ("QB", "RB", "WR", "TE"):
+        score += 30 * min(1.0, max(0.0, seasons["ppr"]) / 3000) ** 0.6
+    elif group in ("DL", "LB", "DB"):
+        score += 30 * min(1.0, max(0.0, seasons["def"]) / 450) ** 0.6
+    return score + POSITION_ADJ[group]
 
 
 def apply_ratings(players):
@@ -380,19 +407,49 @@ def load_nflverse():
     return by_gsis, by_espn, by_name, cap_pct, starts
 
 
-def load_career():
-    """Career totals by gsis id: (PPR fantasy points, defensive big-play points)."""
-    career = {}
-    for y in range(SNAP_SEASON - 11, SNAP_SEASON + 1):
+def load_seasons():
+    """Per gsis id: career PPR points and defensive big-play points (all seasons and
+    the last 12), games per team, and first/last season with stats."""
+    out = {}
+    for y in range(STATS_SINCE, SNAP_SEASON + 1):
+        recent = y >= SNAP_SEASON - 11
         with gzip.open(CACHE_DIR / f"stats_{y}.csv.gz", "rt", encoding="utf-8") as f:
             for r in csv.DictReader(f):
-                f_ = lambda k: float(r[k] or 0) if r[k] not in ("NA", "") else 0.0
-                ppr = f_("fantasy_points_ppr")
-                big_plays = (4 * f_("def_sacks") + 5 * f_("def_interceptions") + 3 * f_("def_fumbles_forced")
-                             + f_("def_tackles_for_loss") + f_("def_pass_defended") + 0.1 * f_("def_tackles_solo"))
-                old = career.get(r["player_id"], (0.0, 0.0))
-                career[r["player_id"]] = (old[0] + ppr, old[1] + big_plays)
-    return career
+                num = lambda k: float(r[k]) if r[k] not in ("NA", "") else 0.0
+                ppr = num("fantasy_points_ppr")
+                big_plays = (4 * num("def_sacks") + 5 * num("def_interceptions")
+                             + 3 * num("def_fumbles_forced") + num("def_tackles_for_loss")
+                             + num("def_pass_defended") + 0.1 * num("def_tackles_solo"))
+                st = out.setdefault(r["player_id"], {"ppr": 0.0, "def": 0.0, "ppr_recent": 0.0,
+                                                     "def_recent": 0.0, "teams": {},
+                                                     "first": y, "last": y})
+                st["ppr"] += ppr
+                st["def"] += big_plays
+                if recent:
+                    st["ppr_recent"] += ppr
+                    st["def_recent"] += big_plays
+                if r["recent_team"]:
+                    st["teams"][r["recent_team"]] = st["teams"].get(r["recent_team"], 0) + int(num("games"))
+                st["last"] = y
+    return out
+
+
+def load_honors(nv_by_pfr):
+    """Draft history (every drafted player since 1980): Pro Bowls, All-Pros, Hall of
+    Fame, career value. Indexed by gsis id, falling back to the PFR id."""
+    honors = {}
+    for r in csv.DictReader(open(CACHE_DIR / "nflverse_draft_picks.csv", encoding="utf-8")):
+        gsis = r["gsis_id"] or (nv_by_pfr.get(r["pfr_player_id"]) or {}).get("gsis_id")
+        if not gsis:
+            continue
+        honors[gsis] = {
+            "pb": _int(r["probowls"]) or 0,
+            "ap": _int(r["allpro"]) or 0,
+            "hof": r["hof"] == "TRUE",
+            "av": _int(r["w_av"]) or 0,
+            "round": _int(r["round"]),
+        }
+    return honors
 
 
 def match_nflverse(p, college, by_gsis, by_espn, by_name):
@@ -406,19 +463,67 @@ def match_nflverse(p, college, by_gsis, by_espn, by_name):
     return candidates[0] if len(candidates) == 1 else None
 
 
+def draft_info(nv):
+    if nv and _int(nv["draft_round"]):
+        return {"year": _int(nv["draft_year"]), "round": _int(nv["draft_round"]),
+                "pick": _int(nv["draft_pick"])}
+    return None
+
+
+def build_legends(by_gsis, current_gsis, seasons, honors):
+    """Players who played in LEGEND_SINCE or later and aren't on a roster today."""
+    legends = []
+    for gsis, nv in by_gsis.items():
+        last = _int(nv["last_season"])
+        if not last or last < LEGEND_SINCE or gsis in current_gsis:
+            continue
+        group = POSITION_GROUP.get(nv["position"])
+        # nflverse lists the most recent school first
+        colleges = [canonical_college(c) for c in (nv["college_name"] or "").split(";") if c.strip()]
+        st = seasons.get(gsis)
+        if not group or not colleges or not st or sum(st["teams"].values()) < 16:
+            continue
+        hon = honors.get(gsis)
+        legends.append({
+            "id": "L" + gsis,
+            "name": nv["display_name"],
+            # the team he played the most games for (stats go back to 1999)
+            "team": max(st["teams"], key=st["teams"].get) if st["teams"] else nv["latest_team"],
+            "pos": "S" if nv["position"] == "SAF" else nv["position"],
+            "group": group,
+            "years": [_int(nv["rookie_season"]) or st["first"], last],
+            "college": colleges[0],
+            "colleges": list(dict.fromkeys(colleges)),
+            "draft": draft_info(nv),
+            "pb": hon["pb"] if hon else None,
+            "ap": hon["ap"] if hon else None,
+            "hof": bool(hon and hon["hof"]),
+            "legend": True,
+            "fame": legend_fame(group, hon, st),
+        })
+    add_college_bonus(legends)
+    legends.sort(key=lambda x: (-x["fame"], x["name"]))
+    legends = legends[:LEGEND_CUTOFFS[-1]]
+    for i, pl in enumerate(legends):
+        pl["fame"] = round(pl["fame"], 1)
+        pl["tier"] = 1 + sum(i >= c for c in LEGEND_CUTOFFS[:-1])
+    return legends
+
+
 def main():
     cached = "--cached" in sys.argv
     fetch(cached)
     sleeper = json.loads((CACHE_DIR / "sleeper_players.json").read_text(encoding="utf-8"))
     by_gsis, by_espn, by_nv_name, cap_pct, starts = load_nflverse()
-    career = load_career()
+    seasons = load_seasons()
+    honors = load_honors({r["pfr_id"]: r for r in by_gsis.values() if r["pfr_id"]})
+    no_stats = {"ppr": 0.0, "def": 0.0, "ppr_recent": 0.0, "def_recent": 0.0, "teams": {}}
 
     # Legacy PFR records indexed by name; matched only when colleges agree, so two
     # different players with the same name (e.g. the two Lamar Jacksons) don't mix.
     legacy_by_name = {}
     for lp in json.loads(LEGACY.read_text(encoding="utf-8")):
         lp["colleges"] = [canonical_college(c) for c in lp["college"].split(",") if c and c != "None"]
-        lp["awards"] = list(dict.fromkeys(lp["awards"]))  # the 2024 scrape repeated some
         legacy_by_name.setdefault(name_key(lp["player_name"]), lp)
 
     ratings_by_name = {}
@@ -459,10 +564,9 @@ def main():
             others = others + [canonical_college(c) for c in nv["college_name"].split(";")]
         all_colleges += [c for c in dict.fromkeys(others) if c and c not in all_colleges]
 
-        draft = None
-        if nv and _int(nv["draft_round"]):
-            draft = {"year": _int(nv["draft_year"]), "round": _int(nv["draft_round"]),
-                     "pick": _int(nv["draft_pick"])}
+        draft = draft_info(nv)
+        hon = honors.get(nv["gsis_id"]) if nv else None
+        st = seasons.get(nv["gsis_id"], no_stats) if nv else no_stats
 
         players.append({
             "id": p["player_id"],
@@ -475,14 +579,14 @@ def main():
             "college": college,
             "colleges": all_colleges,
             "draft": draft,
-            "pb": legacy["pro_bowls"] if legacy else None,
-            "ap": legacy["all_pros"] if legacy else None,
-            "awards": legacy["awards"] if legacy else [],
+            "pb": hon["pb"] if hon else None,
+            "ap": hon["ap"] if hon else None,
             "fame": fame_score(p, group, nv,
                                cap_pct.get(nv["gsis_id"]) if nv else None,
                                starts.get(nv["pfr_id"], 0) if nv else 0,
-                               career.get(nv["gsis_id"], (0.0, 0.0)) if nv else (0.0, 0.0)),
+                               (st["ppr_recent"], st["def_recent"])),
             "_rating": rating,
+            "_gsis": nv["gsis_id"] if nv else None,
         })
 
     add_college_bonus(players)
@@ -493,16 +597,20 @@ def main():
     for i, pl in enumerate(players):
         pl["tier"] = 1 + sum(i >= c for c in TIER_CUTOFFS)
 
+    current_gsis = {pl.pop("_gsis") for pl in players} - {None}
+    legends = build_legends(by_gsis, current_gsis, seasons, honors)
+
     colleges = {}
-    for pl in players:
+    for pl in players + legends:
         for c in pl["colleges"]:
             colleges.setdefault(c, {"conf": conference(c), "aliases": ALIASES.get(c, [])})
 
     out = {
         "generated": date.today().isoformat(),
-        "source": "Sleeper API + Pro-Football-Reference (2024)",
+        "source": "Sleeper API, nflverse, Pro-Football-Reference",
         "colleges": dict(sorted(colleges.items())),
         "players": players,
+        "legends": legends,
     }
     OUT.parent.mkdir(exist_ok=True)
     OUT.write_text(json.dumps(out, separators=(",", ":"), ensure_ascii=False), encoding="utf-8")
@@ -510,7 +618,8 @@ def main():
     tiers = [sum(p["tier"] == t for p in players) for t in (1, 2, 3, 4)]
     print(f"Wrote {len(players)} players, {len(colleges)} colleges -> {OUT.relative_to(ROOT)}")
     print(f"Tiers (Easy/Medium/Hard/Expert): {tiers}")
-    print(f"Legacy matches: {sum(p['pb'] is not None for p in players)}")
+    legend_tiers = [sum(p["tier"] == t for p in legends) for t in (1, 2, 3)]
+    print(f"Legends: {len(legends)} (Easy/Medium/Hard): {legend_tiers}")
 
 
 if __name__ == "__main__":

@@ -11,7 +11,7 @@ import {
 // ---------------------------------------------------------------------------
 const STORE_KEY = 'ncg:v1';
 const DEFAULT_SAVE = {
-  settings: { difficulty: 'easy', style: 'choice' },
+  settings: { difficulty: 'easy', style: 'choice', era: 'current' },
   stats: { games: 0, correct: 0, answered: 0, streak: 0, bestStreak: 0 },
   recent: [],
   daily: {},
@@ -48,6 +48,29 @@ function toast(msg) {
   toast.timer = setTimeout(() => t.classList.remove('show'), 1800);
 }
 
+const LEGEND_BLURBS = {
+  easy: 'Hall of Famers and household names since 2010',
+  medium: 'Pro Bowlers and fantasy favorites',
+  hard: 'Solid starters you might have forgotten',
+  expert: 'Deep cuts from the last 15 years',
+};
+
+// Legends show the city their team was in during the middle of their career
+const OLD_CITIES = [
+  { team: 'LAC', before: 2017, name: 'San Diego Chargers' },
+  { team: 'LAR', before: 2016, name: 'St. Louis Rams' },
+  { team: 'LV', before: 2020, name: 'Oakland Raiders' },
+  { team: 'WAS', before: 2022, name: 'Washington' },
+];
+function teamFor(p) {
+  const code = p.team === 'LA' ? 'LAR' : p.team;
+  const team = TEAMS[code] || { name: code, color: '#334155', alt: '#94a3b8' };
+  if (!p.legend) return team;
+  const mid = (p.years[0] + p.years[1]) / 2;
+  const old = OLD_CITIES.find(o => o.team === code && mid < o.before);
+  return old ? { ...team, name: old.name } : team;
+}
+
 // ---------------------------------------------------------------------------
 // Home
 // ---------------------------------------------------------------------------
@@ -62,7 +85,7 @@ function renderHome() {
   $topRight.textContent = '';
 
   const today = save.daily[dailyKey()];
-  const { difficulty, style } = save.settings;
+  const { difficulty, style, era } = save.settings;
   const st = save.stats;
   const accuracy = st.answered ? Math.round((st.correct / st.answered) * 100) + '%' : '—';
 
@@ -85,18 +108,22 @@ function renderHome() {
         </div>
         <button class="btn btn-block" data-action="share-daily">Share result</button>
       ` : `
-        <p class="hint-text" style="margin:0">Same 10 players for everyone today, easiest to hardest.</p>
+        <p class="hint-text" style="margin:0">Same 10 players for everyone today, easiest to hardest, with a throwback bonus at the end.</p>
         <button class="btn btn-primary btn-block" data-action="daily">Play today's challenge</button>
       `}
     </section>
 
     <h3 class="section-label">Practice</h3>
     <div class="card">
+      <div class="segmented" role="group" aria-label="Players" style="--cols:2;margin-bottom:14px">
+        <button type="button" data-era="current" aria-pressed="${era === 'current'}">Current players</button>
+        <button type="button" data-era="legends" aria-pressed="${era === 'legends'}">Legends</button>
+      </div>
       <div class="segmented" role="group" aria-label="Difficulty">
         ${Object.entries(DIFFICULTIES).map(([k, d]) =>
           `<button type="button" data-difficulty="${k}" aria-pressed="${k === difficulty}">${d.label}</button>`).join('')}
       </div>
-      <p class="hint-text" id="diffBlurb">${DIFFICULTIES[difficulty].blurb}</p>
+      <p class="hint-text" id="diffBlurb">${era === 'legends' ? LEGEND_BLURBS[difficulty] : DIFFICULTIES[difficulty].blurb}</p>
 
       <div class="segmented" role="group" aria-label="Answer style" style="--cols:2;margin-top:14px">
         <button type="button" data-style="choice" aria-pressed="${style === 'choice'}">Multiple choice</button>
@@ -121,7 +148,12 @@ $screen.addEventListener('click', e => {
   const el = e.target.closest('button, li[data-college]');
   if (!el) return;
 
-  if (el.dataset.difficulty) {
+  if (el.dataset.era) {
+    save.settings.era = el.dataset.era;
+    persist();
+    renderHome();
+    $screen.querySelector(`[data-era="${el.dataset.era}"]`).focus();
+  } else if (el.dataset.difficulty) {
     save.settings.difficulty = el.dataset.difficulty;
     persist();
     renderHome();
@@ -164,11 +196,11 @@ $homeBtn.addEventListener('click', () => {
 // Playing
 // ---------------------------------------------------------------------------
 function startGame(mode) {
-  const { difficulty, style } = save.settings;
+  const { difficulty, style, era } = save.settings;
   const round = mode === 'daily'
-    ? pickDaily(data.players)
-    : pickRound(data.players, difficulty, { recent: save.recent });
-  game = { mode, style, difficulty, round, i: 0, results: [] };
+    ? pickDaily(data.players, data.legends)
+    : pickRound(era === 'legends' ? data.legends : data.players, difficulty, { recent: save.recent });
+  game = { mode, style, difficulty, era: mode === 'daily' ? 'mixed' : era, round, i: 0, results: [] };
   $homeBtn.hidden = false;
   startQuestion();
 }
@@ -187,16 +219,19 @@ function startQuestion() {
 
 function renderQuestion() {
   const p = game.round[game.i];
-  const team = TEAMS[p.team] || { name: p.team, color: '#334155', alt: '#94a3b8' };
+  const team = teamFor(p);
   const answered = game.answer !== null;
   const points = game.results.reduce((s, r) => s + r.points, 0);
   $topRight.textContent = `${points} pt${points === 1 ? '' : 's'}`;
 
   const chips = [
     POSITIONS[p.pos] || p.pos,
-    p.exp ? `${p.exp} yr${p.exp > 1 ? 's' : ''} in NFL` : 'Rookie',
-    p.draft ? `${p.draft.year} draft · Rd ${p.draft.round}, #${p.draft.pick}` : (p.exp ? 'Undrafted' : null),
+    p.legend
+      ? `${p.years[0]}–${p.years[1]}`
+      : (p.exp ? `${p.exp} yr${p.exp > 1 ? 's' : ''} in NFL` : 'Rookie'),
+    p.draft ? `${p.draft.year} draft · Rd ${p.draft.round}, #${p.draft.pick}` : (p.exp || p.legend ? 'Undrafted' : null),
     p.pb ? `${p.pb}× Pro Bowl` : null,
+    p.hof ? 'Hall of Fame' : null,
   ].filter(Boolean);
 
   $screen.innerHTML = `
@@ -207,7 +242,7 @@ function renderQuestion() {
     <article class="card player" style="--team:${team.color};--team-alt:${team.alt}">
       <div class="player-band">
         <span class="player-team">${esc(team.name)}</span>
-        ${p.num ? `<span class="player-num">#${esc(p.num)}</span>` : ''}
+        ${p.legend ? '<span class="player-tag">Legend</span>' : p.num ? `<span class="player-num">#${esc(p.num)}</span>` : ''}
       </div>
       <div class="player-body">
         <h2 class="player-name">${esc(p.name)}</h2>
@@ -421,7 +456,8 @@ function finishGame() {
 function renderResults() {
   const correct = game.results.filter(r => r.correct).length;
   const points = game.results.reduce((s, r) => s + r.points, 0);
-  const label = game.mode === 'daily' ? `Daily #${dailyNumber()}` : DIFFICULTIES[game.difficulty].label;
+  const label = game.mode === 'daily' ? `Daily #${dailyNumber()}`
+    : `${game.era === 'legends' ? 'Legends · ' : ''}${DIFFICULTIES[game.difficulty].label}`;
   const verdict = correct >= 9 ? 'Scout of the year' : correct >= 7 ? 'Front office material'
     : correct >= 5 ? 'Solid work' : correct >= 3 ? 'Room to grow' : 'Rough day at the combine';
   $topRight.textContent = '';
@@ -439,7 +475,7 @@ function renderResults() {
       ${game.round.map((p, k) => {
         const r = game.results[k];
         const icon = !r.correct ? '❌' : r.hints ? '🟨' : '✅';
-        const team = TEAMS[p.team]?.name || p.team;
+        const team = teamFor(p).name + (p.legend ? ` · ${p.years[0]}–${p.years[1]}` : '');
         const guessed = !r.correct && r.guess ? `<small>You: ${esc(r.guess)}</small>` : '';
         return `<li><span aria-label="${r.correct ? 'correct' : 'wrong'}">${icon}</span>
           <span class="who">${esc(p.name)}<small>${esc(p.pos)} · ${esc(team)}</small></span>
@@ -503,7 +539,7 @@ async function boot() {
   }
   collegeIndex = buildCollegeIndex(data.colleges);
   popularity = {};
-  for (const p of data.players) popularity[p.college] = (popularity[p.college] || 0) + 1;
+  for (const p of [...data.players, ...data.legends]) popularity[p.college] = (popularity[p.college] || 0) + 1;
   document.getElementById('dataDate').textContent =
     new Date(data.generated + 'T12:00:00').toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
   renderHome();
