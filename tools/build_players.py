@@ -266,66 +266,64 @@ POSITION_GROUP = {
 NO_RANK = 9_999_999
 
 # Casual fans know the ball carriers; defenders and linemen need to be truly elite
-POSITION_ADJ = {"QB": 22, "WR": 12, "RB": 12, "TE": 5, "OL": -18, "DL": -14, "LB": -14, "DB": -16,
-                "K": -30, "P": -35, "LS": -45}
+# Position still matters (QBs are the easiest to place), but fantasy value already
+# favors the ball carriers, so these stay modest
+POSITION_ADJ = {"QB": 15, "WR": 6, "RB": 6, "TE": 3, "OL": -12, "DL": -4, "LB": -4, "DB": -6,
+                "K": -20, "P": -25, "LS": -35}
 
 
 def draft_points(pick):
     """Draft slot is one of the strongest signals: fans remember first-round picks.
-    #1 -> 40, #10 -> 23, #32 -> 15, #100 -> 7, undrafted -> 0."""
+    #1 -> 30, #10 -> 18, #32 -> 11, #100 -> 5, undrafted -> 0."""
     if not pick:
         return 0.0
-    return max(0.0, 40 * (1 - math.log(pick) / math.log(260)))
+    return max(0.0, 30 * (1 - math.log(pick) / math.log(260)))
 
 
-def fame_score(p, group, nv, cap_pct, starts, career):
-    """Higher = more recognizable. Only the ordering matters (tiers use fame rank)."""
-    exp = p.get("years_exp") or 0
-    rank = p.get("search_rank")
-
-    # Sleeper search rank is driven by fantasy interest: 1 -> 72, 10 -> 57, 100 -> 42,
-    # 1000 -> 27. Unranked players (mostly linemen and backups) start at 12.
-    if rank and rank < NO_RANK:
-        score = max(12.0, 72 - 15 * math.log10(rank))
-        # Current stars are easy no matter where they were drafted (Puka Nacua, 5th round)
-        score += 12 if rank <= 10 else 8 if rank <= 30 else 4 if rank <= 60 else 0
-    else:
-        score = 12.0
-
-    score += draft_points(_int(nv.get("draft_pick")) if nv else None)
-
-    # Current contract as a share of the salary cap. Stars get paid, which covers
-    # linemen and defenders that fantasy ranks ignore. 12%+ of the cap -> 30.
-    if cap_pct:
-        score += 30 * min(1.0, cap_pct / 0.12) ** 0.8
-
-    # Starter last season (50%+ of snaps): up to 10
-    score += min(starts, 17) / 17 * 10
-
-    # Career production since 2014: long, productive careers make names stick
-    # (Kelce, Kittle, Garrett) even when current fantasy interest has faded.
-    # Offense: PPR fantasy points, ~2500 = max. Defense: big plays, ~350 = max.
-    ppr, defense = career
+def production_points(group, ppr, defense):
+    """Pro production: career fantasy points for offense, sacks/INTs/big plays for
+    defense. Up to 35."""
     if group in ("QB", "RB", "WR", "TE"):
-        score += 24 * min(1.0, max(0.0, ppr) / 2500) ** 0.6
-    elif group in ("DL", "LB", "DB"):
-        score += 24 * min(1.0, max(0.0, defense) / 350) ** 0.6
+        return 35 * min(1.0, max(0.0, ppr) / 2500) ** 0.6
+    if group in ("DL", "LB", "DB"):
+        return 35 * min(1.0, max(0.0, defense) / 700) ** 0.6
+    return 0.0
 
-    # A few seasons in the league makes a name stick
-    score += min(exp, 8) * 0.8
 
-    return score + POSITION_ADJ[group]
+def score_parts(p, group, nv, cap_pct, starts, career, hon):
+    """Why a current player ranks where he does. The big three are fantasy value,
+    pro production and draft slot; honors, contract, starts and position adjust."""
+    rank = p.get("search_rank")
+    fantasy = 0.0
+    if rank and rank < NO_RANK:
+        # Sleeper search rank: 1 -> 46, 10 -> 37, 30 -> 29, 100 -> 18, 1000 -> 9
+        fantasy = max(0.0, 36 - 9 * math.log10(rank))
+        fantasy += 10 if rank <= 10 else 6 if rank <= 30 else 3 if rank <= 60 else 0
+    return {
+        "fantasy": fantasy,
+        "production": production_points(group, *career),
+        "draft": draft_points(_int(nv.get("draft_pick")) if nv else None),
+        "honors": min(20, 3 * hon["pb"] + 4 * hon["ap"]) if hon else 0,
+        "contract": 8 * min(1.0, cap_pct / 0.12) ** 0.8 if cap_pct else 0,
+        "starts": min(starts, 17) / 17 * 4,
+        "position": POSITION_ADJ[group],
+    }
+
+
+def fame_score(*args):
+    """Higher = more recognizable. Only the ordering matters (tiers use fame rank)."""
+    return sum(score_parts(*args).values())
 
 
 def add_college_bonus(players):
     """Big football schools are easier to guess: a star from Alabama is easier than
-    an equally famous player from Fresno State. Up to +8 for the biggest programs."""
+    an equally famous player from Fresno State. Up to +4 for the biggest programs."""
     counts = {}
     for p in players:
         counts[p["college"]] = counts.get(p["college"], 0) + 1
     for p in players:
         power = conference(p["college"]) not in ("Group of 5", "FCS / small school")
-        p["fame"] += (8 if power else 3) * min(1.0, counts[p["college"]] / 45)
+        p["fame"] += (4 if power else 1.5) * min(1.0, counts[p["college"]] / 45)
 
 
 def legend_fame(group, honors, seasons):
@@ -339,10 +337,7 @@ def legend_fame(group, honors, seasons):
         score += weight * 3 * min(honors["pb"], 10)
         score += 15 * min(1.0, honors["av"] / 100) ** 0.7  # career approximate value
         score += draft_points(honors["pick"])
-    if group in ("QB", "RB", "WR", "TE"):
-        score += 30 * min(1.0, max(0.0, seasons["ppr"]) / 3000) ** 0.6
-    elif group in ("DL", "LB", "DB"):
-        score += 30 * min(1.0, max(0.0, seasons["def"]) / 450) ** 0.6
+    score += production_points(group, seasons["ppr"], seasons["def"])
     return score + POSITION_ADJ[group]
 
 
@@ -515,6 +510,20 @@ def build_legends(by_gsis, current_gsis, seasons, honors):
     return legends
 
 
+def explain(players):
+    """python tools/build_players.py --cached --explain "Myles Garrett" "Puka Nacua" """
+    if "--explain" not in sys.argv:
+        for pl in players:
+            pl.pop("_parts")
+        return
+    names = sys.argv[sys.argv.index("--explain") + 1:]
+    for rank, pl in enumerate(players, 1):
+        parts = pl.pop("_parts")
+        if pl["name"] in names:
+            detail = "  ".join(f"{k} {v:.0f}" for k, v in parts.items())
+            print(f"#{rank} {pl['name']} ({pl['pos']}) tier {pl['tier']}: {detail}")
+
+
 def main():
     cached = "--cached" in sys.argv
     fetch(cached)
@@ -589,7 +598,11 @@ def main():
             "fame": fame_score(p, group, nv,
                                cap_pct.get(nv["gsis_id"]) if nv else None,
                                starts.get(nv["pfr_id"], 0) if nv else 0,
-                               (st["ppr_recent"], st["def_recent"])),
+                               (st["ppr_recent"], st["def_recent"]), hon),
+            "_parts": score_parts(p, group, nv,
+                                  cap_pct.get(nv["gsis_id"]) if nv else None,
+                                  starts.get(nv["pfr_id"], 0) if nv else 0,
+                                  (st["ppr_recent"], st["def_recent"]), hon),
             "_rating": rating,
             "_gsis": nv["gsis_id"] if nv else None,
         })
@@ -602,6 +615,7 @@ def main():
     for i, pl in enumerate(players):
         pl["tier"] = 1 + sum(i >= c for c in TIER_CUTOFFS)
     current_gsis = {pl.pop("_gsis") for pl in players} - {None}
+    explain(players)
     players = players[:TIER_CUTOFFS[-1]]
 
     legends = build_legends(by_gsis, current_gsis, seasons, honors)

@@ -22,17 +22,21 @@ Name the college each NFL player went to. Live at https://simon73737.github.io/n
 
 ## How difficulty works
 
-Every active player gets a score for how easy his college is to guess, built from:
+Every active player gets a score. Three factors drive it:
 
-- Sleeper's search rank (how often people look a player up, mostly driven by fantasy football)
-- Career production since 2014 (fantasy points for offense, sacks/INTs/big plays for defense), so long-time stars like Kelce stay easy
-- Sleeper's top 60 get an extra boost, so late-round stars (Puka Nacua) stay easy
-- Draft slot, one of the biggest factors: fans remember first-round picks, and #1 overall counts far more than a 3rd-rounder
-- Current contract as a share of the salary cap (catches star linemen and defenders that fantasy ignores)
-- Games started last season
-- Position, the other big factor: QBs most of all, then receivers and backs; defenders and linemen need to be elite to rank high; kickers, punters and long snappers rank lowest
-- College: stars from big programs (Alabama, Ohio State…) get a boost over equally famous players from small schools
-- Your own 1–4 ratings from the old tool, which override the formula when they disagree
+| Factor | Max | What it measures |
+| --- | --- | --- |
+| Fantasy value | 46 | Sleeper search rank (how often people look a player up); the top 60 get an extra boost so late-round stars like Puka Nacua stay easy |
+| Pro production | 35 | Career fantasy points since 2014 for offense; sacks, INTs, forced fumbles and other big plays for defense |
+| Draft slot | 30 | #1 overall is worth 30, #10 about 18, #32 about 11, undrafted 0 |
+
+Smaller adjustments: Pro Bowls/All-Pros (up to 20), current contract (up to 8), starts last season (up to 4), position (QB +15, WR/RB +6 down to OL -12 and specialists lower), big-program college (up to 4), and your own 1-4 ratings from the old tool, which override the formula when they disagree.
+
+To see why a player lands where he does:
+
+```sh
+python tools/build_players.py --cached --explain "Myles Garrett" "Brock Purdy"
+```
 
 Players are ranked by that score: the top 120 are **Easy**, the next 250 **Medium**, the next 400 **Hard**. Everyone past that is left out, since nobody could reasonably guess them. Rounds mix tiers (see `DIFFICULTIES` in `js/game.js`). In multiple choice, Easy players never get a wrong answer from their own conference.
 
