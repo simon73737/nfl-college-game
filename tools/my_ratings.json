@@ -1,0 +1,807 @@
+[
+ {
+  "name": "Anthony Pittman",
+  "college": "Wayne State (MI)",
+  "rating": 1
+ },
+ {
+  "name": "James Houston",
+  "college": "Florida,Jackson St.",
+  "rating": 2
+ },
+ {
+  "name": "Myles Murphy",
+  "college": "Clemson",
+  "rating": 1
+ },
+ {
+  "name": "Patrick Paul",
+  "college": "Houston",
+  "rating": 1
+ },
+ {
+  "name": "Ashtyn Davis",
+  "college": "California",
+  "rating": 1
+ },
+ {
+  "name": "Darnell Wright",
+  "college": "Tennessee",
+  "rating": 1
+ },
+ {
+  "name": "Cameron Sutton",
+  "college": "Tennessee",
+  "rating": 2
+ },
+ {
+  "name": "Braxton Berrios",
+  "college": "Miami (FL)",
+  "rating": 2
+ },
+ {
+  "name": "Nakobe Dean",
+  "college": "Georgia",
+  "rating": 3
+ },
+ {
+  "name": "DeVonta Smith",
+  "college": "Alabama",
+  "rating": 4
+ },
+ {
+  "name": "Breece Hall",
+  "college": "Iowa St.",
+  "rating": 4
+ },
+ {
+  "name": "Andrew Wylie",
+  "college": "Eastern Michigan",
+  "rating": 3
+ },
+ {
+  "name": "Nick Scott",
+  "college": "Penn St.",
+  "rating": 2
+ },
+ {
+  "name": "Noah Fant",
+  "college": "Iowa",
+  "rating": 3
+ },
+ {
+  "name": "Jared Goff",
+  "college": "California",
+  "rating": 4
+ },
+ {
+  "name": "Johnny Wilson",
+  "college": "Arizona St.,Florida St.",
+  "rating": 1
+ },
+ {
+  "name": "Tyrion Davis-Price",
+  "college": "LSU",
+  "rating": 1
+ },
+ {
+  "name": "Derrick Brown",
+  "college": "Auburn",
+  "rating": 2
+ },
+ {
+  "name": "Olumuyiwa Fashanu",
+  "college": "Penn St.",
+  "rating": 3
+ },
+ {
+  "name": "Daron Payne",
+  "college": "Alabama",
+  "rating": 4
+ },
+ {
+  "name": "Mark Robinson",
+  "college": "Presbyterian,SE Missouri St.,Mississippi",
+  "rating": 1
+ },
+ {
+  "name": "Mike Williams",
+  "college": "Clemson",
+  "rating": 4
+ },
+ {
+  "name": "Jamal Adams",
+  "college": "LSU",
+  "rating": 4
+ },
+ {
+  "name": "Dorian Williams",
+  "college": "Tulane",
+  "rating": 1
+ },
+ {
+  "name": "Brandon Dorlus",
+  "college": "Oregon",
+  "rating": 1
+ },
+ {
+  "name": "Chris Rodriguez",
+  "college": "Kentucky",
+  "rating": 2
+ },
+ {
+  "name": "Colby Sorsdal",
+  "college": "William & Mary",
+  "rating": 1
+ },
+ {
+  "name": "Brandon Coleman",
+  "college": "Trinity Valley CC (TX),TCU",
+  "rating": 1
+ },
+ {
+  "name": "P.J. Locke",
+  "college": "Texas",
+  "rating": 1
+ },
+ {
+  "name": "Cairo Santos",
+  "college": "Tulane",
+  "rating": 2
+ },
+ {
+  "name": "Jaxon Smith-Njigba",
+  "college": "Ohio St.",
+  "rating": 4
+ },
+ {
+  "name": "Mitch Morse",
+  "college": "Missouri",
+  "rating": 2
+ },
+ {
+  "name": "Evan McPherson",
+  "college": "Florida",
+  "rating": 2
+ },
+ {
+  "name": "Jaheim Bell",
+  "college": "South Carolina,Florida St.",
+  "rating": 1
+ },
+ {
+  "name": "Trevis Gipson",
+  "college": "Tulsa",
+  "rating": 1
+ },
+ {
+  "name": "Troy Franklin",
+  "college": "Oregon",
+  "rating": 2
+ },
+ {
+  "name": "Carlos Watkins",
+  "college": "Clemson",
+  "rating": 2
+ },
+ {
+  "name": "Javonte Williams",
+  "college": "North Carolina",
+  "rating": 3
+ },
+ {
+  "name": "Ja'Tavion Sanders",
+  "college": "Texas",
+  "rating": 1
+ },
+ {
+  "name": "Dorance Armstrong Jr.",
+  "college": "Kansas",
+  "rating": 2
+ },
+ {
+  "name": "Ben Niemann",
+  "college": "Iowa",
+  "rating": 1
+ },
+ {
+  "name": "Tanner McKee",
+  "college": "Stanford",
+  "rating": 2
+ },
+ {
+  "name": "Joel Bitonio",
+  "college": "Nevada",
+  "rating": 3
+ },
+ {
+  "name": "Joe Milton",
+  "college": "Michigan,Tennessee",
+  "rating": 3
+ },
+ {
+  "name": "Jordan Phillips",
+  "college": "Oklahoma",
+  "rating": 2
+ },
+ {
+  "name": "Johnny Hekker",
+  "college": "Oregon St.",
+  "rating": 2
+ },
+ {
+  "name": "Kirk Cousins",
+  "college": "Michigan St.",
+  "rating": 4
+ },
+ {
+  "name": "Jamarco Jones",
+  "college": "Ohio St.",
+  "rating": 2
+ },
+ {
+  "name": "Cameron Lewis",
+  "college": "Buffalo",
+  "rating": 1
+ },
+ {
+  "name": "Jordan Hicks",
+  "college": "Texas",
+  "rating": 2
+ },
+ {
+  "name": "Isaiah Oliver",
+  "college": "Colorado",
+  "rating": 2
+ },
+ {
+  "name": "Qwan'tez Stiggers",
+  "college": "None",
+  "rating": 1
+ },
+ {
+  "name": "Ethan Pocic",
+  "college": "LSU",
+  "rating": 1
+ },
+ {
+  "name": "D.K. Metcalf",
+  "college": "Mississippi",
+  "rating": 4
+ },
+ {
+  "name": "Wes Schweitzer",
+  "college": "San Jose St.",
+  "rating": 2
+ },
+ {
+  "name": "Rayshawn Jenkins",
+  "college": "Miami (FL)",
+  "rating": 2
+ },
+ {
+  "name": "Zeke Turner",
+  "college": "Washington",
+  "rating": 1
+ },
+ {
+  "name": "Kenny McIntosh",
+  "college": "Georgia",
+  "rating": 2
+ },
+ {
+  "name": "Justin Jefferson",
+  "college": "LSU",
+  "rating": 4
+ },
+ {
+  "name": "DJ Ivey",
+  "college": "Miami (FL)",
+  "rating": 1
+ },
+ {
+  "name": "Connor Williams",
+  "college": "Texas",
+  "rating": 1
+ },
+ {
+  "name": "Stephon Gilmore",
+  "college": "South Carolina",
+  "rating": 4
+ },
+ {
+  "name": "Patrick O'Connell",
+  "college": "Univ. of Mary,Montana",
+  "rating": 1
+ },
+ {
+  "name": "Devin Cochran",
+  "college": "Vanderbilt,Georgia Tech",
+  "rating": 1
+ },
+ {
+  "name": "Jerome Ford",
+  "college": "Alabama,Cincinnati",
+  "rating": 3
+ },
+ {
+  "name": "Josey Jewell",
+  "college": "Iowa",
+  "rating": 2
+ },
+ {
+  "name": "Leonard Taylor",
+  "college": "Miami (FL)",
+  "rating": 1
+ },
+ {
+  "name": "Javon Baker",
+  "college": "Alabama,Central Florida",
+  "rating": 1
+ },
+ {
+  "name": "Marist Liufau",
+  "college": "Notre Dame",
+  "rating": 1
+ },
+ {
+  "name": "Amik Robertson",
+  "college": "Louisiana Tech",
+  "rating": 1
+ },
+ {
+  "name": "Thomas Hennessy",
+  "college": "Duke",
+  "rating": 1
+ },
+ {
+  "name": "D.J. Jones",
+  "college": "East Mississippi CC,Mississippi",
+  "rating": 2
+ },
+ {
+  "name": "Donte Jackson",
+  "college": "LSU",
+  "rating": 2
+ },
+ {
+  "name": "Dalvin Tomlinson",
+  "college": "Alabama",
+  "rating": 2
+ },
+ {
+  "name": "Kendall Fuller",
+  "college": "Virginia Tech",
+  "rating": 3
+ },
+ {
+  "name": "Mason McCormick",
+  "college": "South Dakota St.",
+  "rating": 1
+ },
+ {
+  "name": "Claudin Cherelus",
+  "college": "Massachusetts,Alcorn St.",
+  "rating": 1
+ },
+ {
+  "name": "Aaron Shampklin",
+  "college": "Harvard",
+  "rating": 1
+ },
+ {
+  "name": "Dakoda Shepley",
+  "college": "British Columbia",
+  "rating": 1
+ },
+ {
+  "name": "Tucker Addington",
+  "college": "Sam Houston St.",
+  "rating": 1
+ },
+ {
+  "name": "Jamari Thrash",
+  "college": "Georgia St.,Louisville",
+  "rating": 1
+ },
+ {
+  "name": "Durham Smythe",
+  "college": "Notre Dame",
+  "rating": 3
+ },
+ {
+  "name": "Kindle Vildor",
+  "college": "Georgia Southern",
+  "rating": 1
+ },
+ {
+  "name": "Trent Sieg",
+  "college": "Colorado St.",
+  "rating": 1
+ },
+ {
+  "name": "Kyle Peko",
+  "college": "Oregon St.",
+  "rating": 1
+ },
+ {
+  "name": "Antonio Hamilton",
+  "college": "South Carolina St.",
+  "rating": 1
+ },
+ {
+  "name": "Raheem Mostert",
+  "college": "Purdue",
+  "rating": 3
+ },
+ {
+  "name": "Bryce Huff",
+  "college": "Memphis",
+  "rating": 2
+ },
+ {
+  "name": "Jalen Mills",
+  "college": "LSU",
+  "rating": 2
+ },
+ {
+  "name": "Michael Penix",
+  "college": "Indiana,Washington",
+  "rating": 4
+ },
+ {
+  "name": "Adetokunbo Ogundeji",
+  "college": "Notre Dame",
+  "rating": 2
+ },
+ {
+  "name": "Tremon Smith",
+  "college": "Central Arkansas",
+  "rating": 1
+ },
+ {
+  "name": "Riley Patterson",
+  "college": "Memphis",
+  "rating": 2
+ },
+ {
+  "name": "Sheldon Day",
+  "college": "Notre Dame",
+  "rating": 1
+ },
+ {
+  "name": "Carlton Davis",
+  "college": "Auburn",
+  "rating": 2
+ },
+ {
+  "name": "Devon Key",
+  "college": "Western Kentucky",
+  "rating": 1
+ },
+ {
+  "name": "Maurice Hurst Jr.",
+  "college": "Michigan",
+  "rating": 1
+ },
+ {
+  "name": "Calvin Throckmorton",
+  "college": "Oregon",
+  "rating": 1
+ },
+ {
+  "name": "Dee Williams",
+  "college": "East Central CC (MS),Tennessee",
+  "rating": 1
+ },
+ {
+  "name": "Cameron Young",
+  "college": "Mississippi St.",
+  "rating": 1
+ },
+ {
+  "name": "Gerald Everett",
+  "college": "South Alabama",
+  "rating": 2
+ },
+ {
+  "name": "Myles Harden",
+  "college": "South Dakota",
+  "rating": 1
+ },
+ {
+  "name": "Chuma Edoga",
+  "college": "USC",
+  "rating": 1
+ },
+ {
+  "name": "Levi Drake Rodriguez",
+  "college": "Southwestern Assemblies of God,Texas A&M-Commerce",
+  "rating": 1
+ },
+ {
+  "name": "Tyrod Taylor",
+  "college": "Virginia Tech",
+  "rating": 3
+ },
+ {
+  "name": "Anthony Bradford",
+  "college": "LSU",
+  "rating": 1
+ },
+ {
+  "name": "Elijah Hicks",
+  "college": "California",
+  "rating": 1
+ },
+ {
+  "name": "Brandon Jones",
+  "college": "Texas",
+  "rating": 2
+ },
+ {
+  "name": "Tony Adams",
+  "college": "Illinois",
+  "rating": 1
+ },
+ {
+  "name": "Jerrick Reed",
+  "college": "Northwest Mississippi CC,New Mexico",
+  "rating": 1
+ },
+ {
+  "name": "Dan Feeney",
+  "college": "Indiana",
+  "rating": 2
+ },
+ {
+  "name": "Joshua Cephus",
+  "college": "Texas-San Antonio",
+  "rating": 1
+ },
+ {
+  "name": "Justin Simmons",
+  "college": "Boston Col.",
+  "rating": 2
+ },
+ {
+  "name": "Shaka Heyward",
+  "college": "Duke",
+  "rating": 1
+ },
+ {
+  "name": "Austin Trammell",
+  "college": "Rice",
+  "rating": 1
+ },
+ {
+  "name": "Logan Cooke",
+  "college": "Mississippi St.",
+  "rating": 2
+ },
+ {
+  "name": "Ochaun Mathis",
+  "college": "TCU,Nebraska",
+  "rating": 1
+ },
+ {
+  "name": "Dane Jackson",
+  "college": "Pittsburgh",
+  "rating": 1
+ },
+ {
+  "name": "Javontae Jean-Baptiste",
+  "college": "Ohio St.,Notre Dame",
+  "rating": 1
+ },
+ {
+  "name": "Ryan Van Demark",
+  "college": "Connecticut",
+  "rating": 1
+ },
+ {
+  "name": "Greg Van Roten",
+  "college": "Pennsylvania",
+  "rating": 2
+ },
+ {
+  "name": "Jaylen Wright",
+  "college": "Tennessee",
+  "rating": 2
+ },
+ {
+  "name": "Austin Seibert",
+  "college": "Oklahoma",
+  "rating": 2
+ },
+ {
+  "name": "Davon Godchaux",
+  "college": "LSU",
+  "rating": 1
+ },
+ {
+  "name": "Kevon Seymour",
+  "college": "USC",
+  "rating": 1
+ },
+ {
+  "name": "Charlie Jones",
+  "college": "Buffalo,Iowa,Purdue",
+  "rating": 1
+ },
+ {
+  "name": "Jalen Ramsey",
+  "college": "Florida St.",
+  "rating": 4
+ },
+ {
+  "name": "Da'Shawn Hand",
+  "college": "Alabama",
+  "rating": 1
+ },
+ {
+  "name": "Alex Palczewski",
+  "college": "Illinois",
+  "rating": 1
+ },
+ {
+  "name": "A'Shawn Robinson",
+  "college": "Alabama",
+  "rating": 2
+ },
+ {
+  "name": "Xavier Woods",
+  "college": "Louisiana Tech",
+  "rating": 2
+ },
+ {
+  "name": "Charlie Woerner",
+  "college": "Georgia",
+  "rating": 2
+ },
+ {
+  "name": "Micheal Clemons",
+  "college": "Cisco (TX),Texas A&M",
+  "rating": 1
+ },
+ {
+  "name": "Michael Carter II",
+  "college": "Duke",
+  "rating": 1
+ },
+ {
+  "name": "Ja'Marr Chase",
+  "college": "LSU",
+  "rating": 4
+ },
+ {
+  "name": "Kelee Ringo",
+  "college": "Georgia",
+  "rating": 2
+ },
+ {
+  "name": "Kris Abrams-Draine",
+  "college": "Missouri",
+  "rating": 1
+ },
+ {
+  "name": "De'Von Achane",
+  "college": "Texas A&M",
+  "rating": 3
+ },
+ {
+  "name": "Coby Bryant",
+  "college": "Cincinnati",
+  "rating": 2
+ },
+ {
+  "name": "T.J. Smith",
+  "college": "Arkansas",
+  "rating": 1
+ },
+ {
+  "name": "Matt Dickerson",
+  "college": "UCLA",
+  "rating": 1
+ },
+ {
+  "name": "Terell Smith",
+  "college": "Minnesota",
+  "rating": 1
+ },
+ {
+  "name": "Zach Cunningham",
+  "college": "Vanderbilt",
+  "rating": 2
+ },
+ {
+  "name": "Christian Barmore",
+  "college": "Alabama",
+  "rating": 1
+ },
+ {
+  "name": "Drake Thomas",
+  "college": "North Carolina St.",
+  "rating": 1
+ },
+ {
+  "name": "Tyler Guyton",
+  "college": "TCU,Oklahoma",
+  "rating": 2
+ },
+ {
+  "name": "Jordon Riley",
+  "college": "North Carolina,Garden City (KS),Nebraska,Oregon",
+  "rating": 1
+ },
+ {
+  "name": "Connor Heyward",
+  "college": "Michigan St.",
+  "rating": 2
+ },
+ {
+  "name": "Aaron Brewer",
+  "college": "Texas St.",
+  "rating": 1
+ },
+ {
+  "name": "Reggie Gilliam",
+  "college": "Toledo",
+  "rating": 1
+ },
+ {
+  "name": "Jonathan Jones",
+  "college": "Auburn",
+  "rating": 2
+ },
+ {
+  "name": "Cade York",
+  "college": "LSU",
+  "rating": 2
+ },
+ {
+  "name": "Landon Dickerson",
+  "college": "Florida St.,Alabama",
+  "rating": 2
+ },
+ {
+  "name": "Greg Stroman",
+  "college": "Virginia Tech",
+  "rating": 1
+ },
+ {
+  "name": "Reed Blankenship",
+  "college": "Middle Tenn. St.",
+  "rating": 2
+ },
+ {
+  "name": "David Onyemata",
+  "college": "Manitoba",
+  "rating": 2
+ },
+ {
+  "name": "Greg Newsome II",
+  "college": "Northwestern",
+  "rating": 2
+ },
+ {
+  "name": "Mike Ford",
+  "college": "SE Missouri St.",
+  "rating": 1
+ },
+ {
+  "name": "Keshawn Banks",
+  "college": "San Diego St.",
+  "rating": 1
+ },
+ {
+  "name": "Tee Higgins",
+  "college": "Clemson",
+  "rating": 4
+ },
+ {
+  "name": "Jeff Wilson",
+  "college": "North Texas",
+  "rating": 2
+ }
+]
