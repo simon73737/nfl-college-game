@@ -9,7 +9,6 @@ export const DIFFICULTIES = {
   easy:   { label: 'Easy',   blurb: 'Stars and starters everyone knows', mix: { 1: 1 } },
   medium: { label: 'Medium', blurb: 'Solid starters and rising names',   mix: { 1: 0.3, 2: 0.7 } },
   hard:   { label: 'Hard',   blurb: 'Role players and recent rookies',   mix: { 2: 0.3, 3: 0.7 } },
-  expert: { label: 'Expert', blurb: 'Deep cuts. Good luck.',             mix: { 3: 0.3, 4: 0.7 } },
 };
 
 // Daily challenge: same 10 players for everyone, easiest first, then one

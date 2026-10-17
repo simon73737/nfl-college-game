@@ -52,7 +52,8 @@ DOWNLOADS = {
        for y in range(STATS_SINCE, SNAP_SEASON + 1)},
 }
 
-# Fame rank cutoffs for each tier (1 = Easy ... 4 = Expert)
+# Fame rank cutoffs for each tier (1 = Easy, 2 = Medium, 3 = Hard). Players past
+# the last cutoff are left out: nobody can reasonably guess them.
 TIER_CUTOFFS = [120, 370, 770]
 
 # Legends: anyone who played in LEGEND_SINCE or later and isn't on a roster now.
@@ -265,8 +266,16 @@ POSITION_GROUP = {
 NO_RANK = 9_999_999
 
 # Casual fans know the ball carriers; defenders and linemen need to be truly elite
-POSITION_ADJ = {"QB": 14, "WR": 7, "RB": 7, "TE": 3, "OL": -12, "DL": -10, "LB": -10, "DB": -12,
-                "K": -25, "P": -30, "LS": -40}
+POSITION_ADJ = {"QB": 22, "WR": 12, "RB": 12, "TE": 5, "OL": -18, "DL": -14, "LB": -14, "DB": -16,
+                "K": -30, "P": -35, "LS": -45}
+
+
+def draft_points(pick):
+    """Draft slot is one of the strongest signals: fans remember first-round picks.
+    #1 -> 40, #10 -> 23, #32 -> 15, #100 -> 7, undrafted -> 0."""
+    if not pick:
+        return 0.0
+    return max(0.0, 40 * (1 - math.log(pick) / math.log(260)))
 
 
 def fame_score(p, group, nv, cap_pct, starts, career):
@@ -278,15 +287,12 @@ def fame_score(p, group, nv, cap_pct, starts, career):
     # 1000 -> 27. Unranked players (mostly linemen and backups) start at 12.
     if rank and rank < NO_RANK:
         score = max(12.0, 72 - 15 * math.log10(rank))
+        # Current stars are easy no matter where they were drafted (Puka Nacua, 5th round)
+        score += 12 if rank <= 10 else 8 if rank <= 30 else 4 if rank <= 60 else 0
     else:
         score = 12.0
 
-    # Draft pick: #1 -> 25, #10 -> 15, #32 -> 9, #100 -> 4, undrafted -> 0.
-    # Matters most for young players; after a few years the contract says more.
-    pick = _int(nv.get("draft_pick")) if nv else None
-    if pick:
-        draft = max(0.0, 25 * (1 - math.log(pick) / math.log(260)))
-        score += draft if exp <= 3 else draft * 0.6
+    score += draft_points(_int(nv.get("draft_pick")) if nv else None)
 
     # Current contract as a share of the salary cap. Stars get paid, which covers
     # linemen and defenders that fantasy ranks ignore. 12%+ of the cap -> 30.
@@ -332,8 +338,7 @@ def legend_fame(group, honors, seasons):
         score += weight * 5 * min(honors["ap"], 5)
         score += weight * 3 * min(honors["pb"], 10)
         score += 15 * min(1.0, honors["av"] / 100) ** 0.7  # career approximate value
-        if honors["round"] == 1:
-            score += 4
+        score += draft_points(honors["pick"])
     if group in ("QB", "RB", "WR", "TE"):
         score += 30 * min(1.0, max(0.0, seasons["ppr"]) / 3000) ** 0.6
     elif group in ("DL", "LB", "DB"):
@@ -447,7 +452,7 @@ def load_honors(nv_by_pfr):
             "ap": _int(r["allpro"]) or 0,
             "hof": r["hof"] == "TRUE",
             "av": _int(r["w_av"]) or 0,
-            "round": _int(r["round"]),
+            "pick": _int(r["pick"]),
         }
     return honors
 
@@ -596,8 +601,9 @@ def main():
     players.sort(key=lambda x: (-x["fame"], x["name"]))
     for i, pl in enumerate(players):
         pl["tier"] = 1 + sum(i >= c for c in TIER_CUTOFFS)
-
     current_gsis = {pl.pop("_gsis") for pl in players} - {None}
+    players = players[:TIER_CUTOFFS[-1]]
+
     legends = build_legends(by_gsis, current_gsis, seasons, honors)
 
     colleges = {}
@@ -615,9 +621,9 @@ def main():
     OUT.parent.mkdir(exist_ok=True)
     OUT.write_text(json.dumps(out, separators=(",", ":"), ensure_ascii=False), encoding="utf-8")
 
-    tiers = [sum(p["tier"] == t for p in players) for t in (1, 2, 3, 4)]
+    tiers = [sum(p["tier"] == t for p in players) for t in (1, 2, 3)]
     print(f"Wrote {len(players)} players, {len(colleges)} colleges -> {OUT.relative_to(ROOT)}")
-    print(f"Tiers (Easy/Medium/Hard/Expert): {tiers}")
+    print(f"Tiers (Easy/Medium/Hard): {tiers}")
     legend_tiers = [sum(p["tier"] == t for p in legends) for t in (1, 2, 3)]
     print(f"Legends: {len(legends)} (Easy/Medium/Hard): {legend_tiers}")
 

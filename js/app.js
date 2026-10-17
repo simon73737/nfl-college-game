@@ -19,7 +19,11 @@ const DEFAULT_SAVE = {
 function loadSave() {
   try {
     const s = JSON.parse(localStorage.getItem(STORE_KEY));
-    if (s) return { ...DEFAULT_SAVE, ...s, settings: { ...DEFAULT_SAVE.settings, ...s.settings }, stats: { ...DEFAULT_SAVE.stats, ...s.stats } };
+    if (s) {
+      const out = { ...DEFAULT_SAVE, ...s, settings: { ...DEFAULT_SAVE.settings, ...s.settings }, stats: { ...DEFAULT_SAVE.stats, ...s.stats } };
+      if (!DIFFICULTIES[out.settings.difficulty]) out.settings.difficulty = 'hard';
+      return out;
+    }
   } catch {}
   return structuredClone(DEFAULT_SAVE);
 }
@@ -52,7 +56,6 @@ const LEGEND_BLURBS = {
   easy: 'Hall of Famers and household names since 2010',
   medium: 'Pro Bowlers and fantasy favorites',
   hard: 'Solid starters you might have forgotten',
-  expert: 'Deep cuts from the last 15 years',
 };
 
 // Legends show the city their team was in during the middle of their career
@@ -119,7 +122,7 @@ function renderHome() {
         <button type="button" data-era="current" aria-pressed="${era === 'current'}">Current players</button>
         <button type="button" data-era="legends" aria-pressed="${era === 'legends'}">Legends</button>
       </div>
-      <div class="segmented" role="group" aria-label="Difficulty">
+      <div class="segmented" role="group" aria-label="Difficulty" style="--cols:3">
         ${Object.entries(DIFFICULTIES).map(([k, d]) =>
           `<button type="button" data-difficulty="${k}" aria-pressed="${k === difficulty}">${d.label}</button>`).join('')}
       </div>
